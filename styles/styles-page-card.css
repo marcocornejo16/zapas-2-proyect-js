@@ -1,0 +1,21 @@
+.page-card{
+    color: black;
+    background-color: bisque;
+    border: black;
+}
+
+.btn-carrito{
+    background-color: black;
+    color: bisque;
+    border: black;
+    padding: .5rem;
+    margin: 1.5rem;
+}
+
+.btn-icon{
+    width: 1rem;
+    height: 1rem;
+}
+.information-card{
+    margin: 1rem;
+}
