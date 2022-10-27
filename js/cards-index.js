@@ -131,7 +131,7 @@ const cardsTennis = document.getElementById('cards-tenis')
 Productos.forEach(zapas =>{
     if(zapas.favorite === true){
         cardFavorite.innerHTML = `
-        <div class=" row  m-5">
+        <div class=" row m-5">
         <h4 class="border-bottom p-2" >Mira mas sobre el favorito de la semana</h4>    
             <div class="col-md-5">
                 <img src=${zapas.img} class="img-fluid img-card-destacada" >

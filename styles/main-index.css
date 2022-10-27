@@ -81,6 +81,9 @@ m-1{
     }
 
 }
+.bg-black{
+    background:linear-gradient(10deg,#000,#000,#111,#eee);
+}
 
 .img-card-destacada{
     height: 300px;
@@ -109,6 +112,9 @@ m-1{
     justify-content: center;
 
 }
+.h-cards-section{
+    height: 400px;
+}
 .h-img-section{
     height: 468px;
 }
@@ -126,4 +132,25 @@ m-1{
 }
 .flex-cards{
     flex-wrap: wrap;
+}
+
+.titles-products {
+    color: black;
+    transition: all .5s;
+}
+.titles-products a{
+    text-decoration: none;
+    color: #000;
+}
+.titles-products:hover a{
+    text-decoration: none;
+    color: #fff;
+}
+.titles-products:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.borders-radius-none{
+    border-radius: 0px;
 }
