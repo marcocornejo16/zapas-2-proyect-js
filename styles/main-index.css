@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&display=swap');
+html{
+    box-sizing:content-box;
+    overflow-x: hidden;
+}
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cards-w{
+    width: 50rem;
+    height: 15rem;
+}
+.cards-shadow{
+    border-radius: 0px;
+    box-shadow: 2px 2px black;
+}
+.cards-img{
+    height: 10rem;
+
+}
+
+.d-flex{
+    justify-content:space-evenly;
+}
+
+.btn{
+    border-radius: 0px;
+    transition: all .5s;
+;
+}
+.btn:hover{
+    background:#000 ;
+    color: #fff;
+}
+
+.carousel-item{
+    height: 450px;
+}
+.carousel-contain{
+    object-fit: cover;
+    top: 50%;
+}
+
+.titles-cards {
+    color: black;
+    background-color: #fff;
+    transition: all .5s;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.titles-cards:hover{
+    background-color: black;
+    color: #fff;
+    width: 150px;
+    cursor: pointer;
+}
+.d-flex-cards{
+    display: flex;
+    justify-content:space-between;     
+}
+m-1{
+    margin: 5px;
+}
+@media screen and (max-width:991px) {
+    .responsive {
+        display: none;
+    }
+    .responsive-destacada{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+    .cards-responsive{
+        width: 300px;
+        height: 350px;
+        margin: 6px;
+    }
+
+}
+
+.img-card-destacada{
+    height: 300px;
+    width: max-content;
+}
+@media screen and (max-width:757px){
+    .img-card-destacada{
+        width: 300px;
+        height: 150px;
+    }
+    
+}
+.text-cards{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.h-35{
+    height: 5px;
+    background: #000;
+    display: flex;
+    transition: all .5s;
+    align-items: center;
+    justify-content: center;
+
+}
+.h-img-section{
+    height: 468px;
+}
+.color-w{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.h-35:hover{
+    height: 100px;
+    padding: 10px;
+    cursor:none;
+}
+.flex-cards{
+    flex-wrap: wrap;
+}
