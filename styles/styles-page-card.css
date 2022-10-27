@@ -1,3 +1,10 @@
+html{
+    box-sizing:content-box;
+    overflow-x: hidden;
+
+}
+
+
 .page-card{
     color: black;
     background-color: bisque;
@@ -18,4 +25,18 @@
 }
 .information-card{
     margin: 1rem;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.content{
+    overflow: 100%;
+}
+.nav-index{
+    z-index: 1000;
+}
+
+.carrousel-index img{
+    z-index:1;
 }
