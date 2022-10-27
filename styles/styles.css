@@ -1,2 +1,11 @@
-#colornav{background-color: rgb(245, 238, 225);}
+#colornav {background-color: rgb(245, 238, 225);
+    padding: 0;}
 .nombrefantasia{font-family: 'Anton', sans-serif;}
+#colordrop {background-color: rgb(245, 238, 225);
+padding: 0;}
+.colornavbar{background-color: rgb(245, 238, 225);
+padding: 0;}
+
+
+
+
