@@ -125,12 +125,19 @@ html{
     justify-content: center;
 
 }
-.img-card-contain{
-    background:linear-gradient(-1deg, rgb(12, 163, 223), #fff,#fff,rgb(12, 163, 223))
+.img-card-contain-futbol{
+    background:linear-gradient(0deg,#000,#000,#000,#000,#000,#000,#fff,#000,#000,#000,#000,#000,#000)
+
 }
+.img-card-contain-tenis{
+    background:linear-gradient(0deg, rgb(89, 202, 240),#fff,rgb(89, 202, 240))
+}
+
+
 .h-cards-section{
     height: 400px;
-    object-fit:contain;
+    object-fit:cover;
+    width: 300px;
     
 }
 .h-img-section{
