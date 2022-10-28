@@ -31,6 +31,9 @@ html{
     width: 200;
     text-decoration: none;
 }
+.text-dec-none{
+    text-decoration: none;
+}
 .btn-cards:hover{
     background:#000 ;
     color: #fff;
@@ -122,11 +125,17 @@ html{
     justify-content: center;
 
 }
+.img-card-contain{
+    background:linear-gradient(-1deg, rgb(12, 163, 223), #fff,#fff,rgb(12, 163, 223))
+}
 .h-cards-section{
     height: 400px;
+    object-fit:contain;
+    
 }
 .h-img-section{
     height: 468px;
+    
 }
 .color-w{
     color: #fff;
@@ -156,6 +165,7 @@ html{
     text-decoration: none;
     color: #fff;
 }
+
 .titles-products:hover{
     background-color: black;
     color: #fff;

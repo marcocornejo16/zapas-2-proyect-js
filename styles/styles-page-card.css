@@ -4,11 +4,15 @@ html{
 
 }
 
-
 .page-card{
     color: black;
     background-color: bisque;
     border: black;
+}
+.page-card:hover{
+    color: bisque;
+    background-color: black;
+
 }
 
 .btn-carrito{
@@ -17,6 +21,10 @@ html{
     border: black;
     padding: .5rem;
     margin: 1.5rem;
+}
+.btn-carrito:hover{
+    background-color: bisque;
+    color: #000;
 }
 
 .btn-icon{
@@ -27,8 +35,9 @@ html{
     margin: 1rem;
 }
 .img-fluid{
-    max-width: 100%;
-    height: auto;
+    width:800px;
+    height: 500px;
+    
 }
 
 
