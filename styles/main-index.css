@@ -17,21 +17,24 @@ html{
 }
 .cards-img{
     height: 10rem;
-
+    object-fit: contain;
 }
 
 .d-flex{
     justify-content:space-evenly;
 }
 
-.btn{
+.btn-cards{
     border-radius: 0px;
     transition: all .5s;
-;
+    border: none;
+    width: 200;
+    text-decoration: none;
 }
-.btn:hover{
+.btn-cards:hover{
     background:#000 ;
     color: #fff;
+    text-decoration: none;
 }
 
 .carousel-item{
@@ -61,9 +64,14 @@ html{
     display: flex;
     justify-content:space-between;     
 }
-m-1{
+.m-1{
     margin: 5px;
 }
+.m-0{
+    margin: 0px;
+    padding: 0px;
+}
+
 @media screen and (max-width:991px) {
     .responsive {
         display: none;

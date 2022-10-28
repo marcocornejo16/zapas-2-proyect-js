@@ -30,9 +30,8 @@ html{
     max-width: 100%;
     height: auto;
 }
-.content{
-    overflow: 100%;
-}
+
+
 .nav-index{
     z-index: 1000;
 }
