@@ -18,7 +18,7 @@ Productos.forEach(zapas => {
                 <h5 class="card-title ">${zapas.name}</h5>
                 <p class="card-text w-100 responsive-destacada">${zapas.description}</p>
                 </div>
-                <button class="btn-cards d-flex"> <a href="/cards/cards.html" class="text-dec-none">Ver mas</a></button>
+                <button class="btn-cards d-flex"> <a href="/pages/cards.html" class="text-dec-none">Ver mas</a></button>
             </div>
             
             </div>`
