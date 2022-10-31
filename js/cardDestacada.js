@@ -1,4 +1,4 @@
-import { Productos } from "./Products.js";
+import { Productos } from "./array-list-prod.js";
 
 const imgCardFavorite = document.getElementById('imgCardDestacada')
 const infoCardFavorite = document.getElementById('cardInfoDestacada')
