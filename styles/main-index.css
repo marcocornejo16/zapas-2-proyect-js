@@ -79,6 +79,9 @@ html{
     .responsive {
         display: none;
     }
+    .responsive-img img{
+        display: none;
+    }
     .responsive-destacada{
         white-space: nowrap;
         overflow: hidden;
@@ -186,4 +189,44 @@ html{
     justify-content: center;
     margin-top:30px;
 
+}
+
+.logo-footer{
+    width: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+.redes-footer{
+    display: flex;
+    justify-content: center;
+}
+.flex-footer {
+    text-align: center;
+    background-color: #111;
+    font-family: ¨Nunito sans¨ sans-serif;
+    display: flex;
+    flex: 1;    
+}
+.flex-img img {
+    width: 150px;
+
+}
+.icons-footer {
+    color: white;
+    padding: 1rem;
+    font-family: "Nunito sans" sans-serif;
+}
+
+.icons-footer a {
+    font-size: 12px;
+    color: black;
+    margin: 3px;
+}
+.icons-footer h3{
+    color: #000;
+}
+
+.bg-bisque{
+    background-color: bisque;
 }
