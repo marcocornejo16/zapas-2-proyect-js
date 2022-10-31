@@ -1,4 +1,4 @@
-     export const Productos = [
+    export const Productos = [
     {
         name:'Adidas Ultra Bosst 21',
         categorias:'Running',
