@@ -1,16 +1,19 @@
-import { Zapas } from './array-list-prod.js';
+import { Productos } from './cards-index.js';
 
 const tableBodyHTML = document.getElementById('table-body-zapas');
 console.log(tableBodyHTML)
+console.log(Productos)
 
-Zapas.forEach(elem => {
-     tableBodyHTML.innerHTML +=  `<tr>
-     <td class="table-img">Imagen</td>
-     <td>Marca-modelo</td>
-     <td>Alguna descripcion</td>
-     <td>$</td>
-     <td>Categoria</td>
-     <td>Favorito</td>
-     <td>Icono elementos</td>
-   </tr>`
-})
+// Productos.forEach(elem => {
+//      tableBodyHTML.innerHTML +=  `<tr>
+//      <td>
+//      <img src="${elem.img}" alt="" class="table-img img-fluid">
+//      </td>
+//      <td>${elem.name}</td>
+//      <td>${elem.description}</td>
+//      <td>${elem.price}</td>
+//      <td>${elem.categorias}</td>
+//      <td>${elem.favorite}</td>
+//      <td>Icono elementos</td>
+//    </tr>`
+// })
