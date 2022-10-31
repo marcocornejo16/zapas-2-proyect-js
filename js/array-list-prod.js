@@ -35,7 +35,7 @@ export const Productos = [
         talle:41,
         favorite:true,
         stock:true,
-        img:'https://rukminim1.flixcart.com/image/832/832/xif0q/shoe/d/w/j/-original-imagg7szbsttpysx.jpeg?q=70',
+        img:'https://http2.mlstatic.com/D_NQ_NP_851221-MLA45168316975_032021-O.webp',
         description:'Las zapatillas Nike Revolution 5 amortiguan tu paso con espuma suave para que sigas corriendo con comodidad. El material de punto ligero envuelve el pie en un soporte transpirable, mientras que un diseño minimalista se adapta a casi cualquier lugar que te lleve el día.',
         price: 23999
     },

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&display=swap');
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
 table-img{
     width:70px;
     object-fit: cover;

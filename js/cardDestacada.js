@@ -2,6 +2,8 @@ import { Productos } from "./array-list-prod.js";
 
 const imgCardFavorite = document.getElementById('imgCardDestacada')
 const infoCardFavorite = document.getElementById('cardInfoDestacada')
+const infoCard = document.getElementById('info-destacada')
+const infoExtra = document.getElementById('info-extra')
 
 Productos.forEach(zapaFavorite =>{
     if(zapaFavorite.favorite === true){
@@ -43,6 +45,17 @@ Productos.forEach(zapaFavorite =>{
                         
                     </section>
                 </div>
+        `
+        infoCard.innerHTML =`
+        <h3 class="border-bottom text-center">Descripcion</h3>
+        <p>${zapaFavorite.description}</p>`
+
+        infoExtra.innerHTML= 
+        `<h4 class="text-center ">Envios y Devoluciones</h4>
+        <h5>Envios</h5>
+        <p>Los envios son gratuitos dentro de Argentina. Para envios fuera del pais mandar email a servicioalcliente@gmail.com</p>
+        <h5>Devoluciones</h5>
+        <p>Se puede devolver el producto en el primer mes</p>
         `
     }
 })
