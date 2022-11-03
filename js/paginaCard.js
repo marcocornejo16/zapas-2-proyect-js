@@ -40,6 +40,8 @@ const cardPag = document.getElementById('cardPag')
                                             <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
                                         </svg>
                                         <p>Hasta 3 cuotas sin interes</p>
+                                        <p>En 6 cuotas el interes es de un 10%: <b>$${Math.round((prod.price * 1.10) /6)}</b></p>
+                                        <p>En 12 cuotas el interes es de un 15%: <b>$${Math.round((prod.price * 1.15) /6)}</b></p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-dash" viewBox="0 0 16 16">
                                             <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
                                             <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-5.5 0a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Z"/>
@@ -59,7 +61,7 @@ const cardPag = document.getElementById('cardPag')
                         <h5 class="border-bottom">Envios</h5>
                         <p>Los envios son gratuitos dentro de Argentina. Para envios fuera del pais habra un 10% de recargo del total del producto.</p>
                         <small>Para mas informacion contactarse a servicioalcliente@gmail.com</small>
-                        <h5 class="border-bottom">Devoluciones</h5>
+                        <h5 class="border-bottom mt-3">Devoluciones</h5>
                         <p>Se puede devolver el producto en el primer mes, debera tener la etiqueta y recibo del mismo.</p>
                         <small>Para devoluciones contactarse a devolucionessneakers@gmail.com</small>
                     `
