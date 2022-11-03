@@ -50,12 +50,14 @@ Productos.forEach(zapaFavorite =>{
         <h3 class="border-bottom text-center">Descripcion</h3>
         <p>${zapaFavorite.description}</p>`
 
-        infoExtra.innerHTML= 
-        `<h4 class="text-center ">Envios y Devoluciones</h4>
-        <h5>Envios</h5>
-        <p>Los envios son gratuitos dentro de Argentina. Para envios fuera del pais mandar email a servicioalcliente@gmail.com</p>
-        <h5>Devoluciones</h5>
-        <p>Se puede devolver el producto en el primer mes</p>
+        infoExtra.innerHTML= `
+        <h4 class="text-center ">Envios y Devoluciones</h4>
+        <h5 class="border-bottom">Envios</h5>
+        <p>Los envios son gratuitos dentro de Argentina. Para envios fuera del pais habra un 10% de recargo del total del producto.</p>
+        <small>Para mas informacion contactarse a servicioalcliente@gmail.com</small>
+        <h5 class="border-bottom">Devoluciones</h5>
+        <p>Se puede devolver el producto en el primer mes, debera tener la etiqueta y recibo del mismo.</p>
+        <small>Para devoluciones contactarse a devolucionessneakers@gmail.com</small>
         `
     }
 })
