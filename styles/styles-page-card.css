@@ -97,5 +97,5 @@ html{
 }
 
 .img-cover{
-    object-fit: cover;
+    object-fit: contain;
 }

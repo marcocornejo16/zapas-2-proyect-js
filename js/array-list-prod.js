@@ -27,7 +27,7 @@ export const Productos = [
         talle:39,
         favorite:false,
         stock:true,
-        img:'https://http2.mlstatic.com/D_NQ_NP_983600-MLA50679120002_072022-O.jpg',
+        img:'https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw1b397440/products/PU_376171-03/PU_376171-03-1.JPG',
         description:'Siente el performance deportivo de nuestra arma secreta, las zapatillas de running XX Nitro. Están diseñadas con un equilibrio perfecto entre sujeción y flexibilidad en el mediopié. Tienen un empeine muy cómodo y la tecnología de mediasuela NITRO Foam para mejorar el rebote y la adaptación constante al terreno desde el talón hasta la punta del pie.',
         price:35999,
         descuento:true

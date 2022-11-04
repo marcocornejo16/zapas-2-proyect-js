@@ -27,14 +27,13 @@ html{
     justify-content: center;
 }
 .flex-footer {
-    text-align: center;
     background-color: #111;
     font-family: ¨Nunito sans¨ sans-serif;
     display: flex;
     flex: 1;    
 }
-.flex-img img {
-    width: 150px;
+.flex-img a img {
+    width: 250px;
 
 }
 .icons-footer {
@@ -55,3 +54,17 @@ html{
 .bg-bisque{
     background-color: bisque;
 }
+
+.footer-list a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    list-style: none;
+}
+
+.footer-list a:hover{
+    color: #555 ;
+}
+                
+
+
