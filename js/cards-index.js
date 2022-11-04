@@ -11,11 +11,11 @@ const renderProducts = () =>{
         if (zapas.favorite === true) {
             cardFavorite.innerHTML = `
             <div class=" row m-5">
-            <h4 class="border-bottom p-2" >Mira mas sobre el favorito de la semana</h4>    
-                <div class="col-md-5">
-                    <img src=${zapas.img} class="img-fluid img-card-destacada" >
-                </div>
-                <div class="col-md-7">
+            <h4 class="border-bottom p-2" >Mira el favorito de la semana</h4>    
+                <div class="col-md-6">
+                    <img src=${zapas.img} class="img-fluid img-card-destacada">
+                    </div>
+                    <div class="col-md-6">
                     <div class="card-body">
                     <h5 class="card-title ">${zapas.name}</h5>
                     <p class="card-text w-100 responsive-destacada">${zapas.description}</p>

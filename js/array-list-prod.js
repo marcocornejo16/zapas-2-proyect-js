@@ -5,7 +5,7 @@ export const Productos = [
         talle:40,
         favorite:false,
         stock:true,
-        img:'https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202112/29/00117730862236____7__640x640.jpg',
+        img:'https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202105/18/00117730859547____8__440x440.jpg',
         description: 'Fusión entre el alto rendimiento y la moda. Son unas zapatillas que ofrecen: Ajuste perfecto: la parte del tobillo de la zapatilla es de una malla flexible que consigue que la zapa se ajuste perfectamente a ti físico y a tu forma de correr.',
         price: 39599,
         descuento:false   
@@ -38,7 +38,7 @@ export const Productos = [
         talle:41,
         favorite:true,
         stock:true,
-        img:'https://http2.mlstatic.com/D_NQ_NP_851221-MLA45168316975_032021-O.webp',
+        img:'https://www.clicksport.es/store/19115-thickbox_default/zapatillas-nike-revolution-5.jpg',
         description:'Las zapatillas Nike Revolution 5 amortiguan tu paso con espuma suave para que sigas corriendo con comodidad. El material de punto ligero envuelve el pie en un soporte transpirable, mientras que un diseño minimalista se adapta a casi cualquier lugar que te lleve el día.',
         price: 23999,
         descuento:true
@@ -60,7 +60,7 @@ export const Productos = [
         talle:41,
         favorite:false,
         stock:true,
-        img:'https://essential.vtexassets.com/arquivos/ids/597207-800-auto?v=637949761666600000&width=800&height=auto&aspect=true',
+        img:'https://static.nike.com/a/images/t_default/8427c150-16c8-4a39-be44-ed8983dcf26b/calzado-de-f%C3%BAtbol-para-terrenos-m%C3%BAltiples-mercurial-vapor-14-club-mg-4pMsvC.png',
         description:'El Nike Mercurial Vapor 14 Academy MG mejora un clásico con detalles en oro y plata para brindar un look ideal para los campeones. La textura de agarre en toda la parte superior flexible proporciona un control preciso cuando haces despejes a altas velocidades.',
         price:95999,
         descuento:false
@@ -81,7 +81,7 @@ export const Productos = [
         talle:38,
         favorite:false,
         stock:true,
-        img:'https://assets.adidas.com/images/w_600,f_auto,q_auto/dedba8a6ccbc4dda9714aae800c0f3fe_9366/Botines_Nemeziz_Messi_19.4_Flexible_Ground_Azul_EF1816_01_standard.jpg',
+        img:'https://www.stockcenter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw6a42ebad/products/AD_EG7202/AD_EG7202-1.JPG',
         description:'Nemeziz no es solo un botín. Es un compromiso con la victoria y no con la aprobación del resto. Si preferís la fama a los goles, seguí buscando. Pero si estás preparado para llevar a tu equipo a la gloria, seguí leyendo. El exterior sintético de estos botines para niños luce el logo de Messi y se adapta a la forma de tu pie para mantenerte cómodo mientras deslumbrás al público con tu magia. La lengüeta integrada favorece un ajuste óptimo para una máxima estabilidad en cada giro y tiro al arco.',
         price: 31999,
         descuento:false
@@ -92,7 +92,7 @@ export const Productos = [
         talle:41,
         favorite:false,
         stock:true,
-        img:'https://essential.vtexassets.com/arquivos/ids/518862-800-auto?v=637793374779000000&width=800&height=auto&aspect=true',
+        img:'https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw7969040d/products/PU_107153-01/PU_107153-01-1.JPG',
         description:'Los Botines Puma Future Z 3.4 Fg/Ag son tu aliado perfecto de juego. Presentan una combinación de ligereza, comodidad, liviandad y durabilidad perfecta para movimientos ágiles e inesperados. Están fabricados con tapones icónicos que permiten que despliegues tus habilidades en distintas zonas de juego y en distintas direcciones. Su tecnología FUZIONFIT+ ofrece una mejor adaptación a tu pie para mejorar la sujeción y libertad de movimiento. Este calzado representa una mezcla de seguridad, diseño elegante y agilidad que hará que no puedas dejar de usarlos. ¡Ponételos, entrá en la cancha y ganá el juego!',
         price: 12000,
         descuento:false
@@ -103,7 +103,7 @@ export const Productos = [
         talle:42,
         favorite:false,
         stock:true,
-        img:'https://http2.mlstatic.com/D_NQ_NP_839282-MLA50402755942_062022-O.jpg',
+        img:'https://celadasa.vtexassets.com/arquivos/ids/208999-800-auto?v=637879652881400000&width=800&height=auto&aspect=true',
         description:'Las zapatillas Asics Gel-Backhand Standard están pensadas par que aproveches al máximo tus kilómetros durante la corrida. Es un modelo liviano y duradero que garantiza comodidad y resistencia para que puedas alcanzar tus metas e incluso superarlas. Están confeccionadas con material sintético y mesh y su entresuela con tecnología GEL proporciona un altísima amortiguación, reduciendo los impactos, así tendrás comodidad asegurada en todo momento. La suela de caucho para canchas rápidas cuenta con alta calidad y ofrece máxima durabilidad. Tienen un estilo elegante y sofisticado, para que no dejes de ser vos en ningún momento.',
         price: 22000,
         descuento:true
@@ -136,7 +136,7 @@ export const Productos = [
         talle:39,
         favorite:false,
         stock:true,
-        img:'https://filaar.vtexassets.com/arquivos/ids/6276841-800-auto?v=638023173643600000&width=800&height=auto&aspect=true',
+        img:'https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwc6b5064d/products/FI_F01TN004169-156/FI_F01TN004169-156-1.JPG',
         description:'La Zapatilla Axilus Ace Clay es un calzado para alta performance que otorga liviandad y estabilidad.Capellada compuesta de materiales sintéticos inyectados y con piezas laterales para una mejor estabilidad.Entresuela de EVA brinda confort y amortigación. Suela de caucho de diseño especial para superficies de polvo de ladrillos.',
         price: 26999,
         descuento:false

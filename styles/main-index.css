@@ -13,7 +13,7 @@ html{
 }
 .cards-shadow{
     border-radius: 0px;
-    box-shadow: 2px 2px black;
+    filter:drop-shadow(5px 3px 5px black)
 }
 .cards-img{
     height: 10rem;
@@ -80,6 +80,9 @@ html{
 .d-flex-cards{
     display: flex;
     justify-content:space-between;     
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }
 .m-1{
     margin: 5px;
