@@ -8,14 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/styles-page-card.css">
+    <link rel="stylesheet" href="/styles/contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6806c90ed3.js" crossorigin="anonymous"></script>
-
 
     <title>SNEAKERS</title>
 
@@ -30,11 +29,12 @@
             <nav class="navbar navbar-expand-md" id="colornav">
                 <div class="container-fluid">
                     <div class="nombrefantasia">
-                        <a class="navbar-brand" href="/index.html">
+                        
                             <a href="/index.html">
                                 <img src="/IMAGES/logo-sneakers.webp" width="80px" alt="" />
                             </a>
                     </div>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,10 @@
                         </ul>
                         <!----------------------------------------------------
                         COMENTADO
-                            
+                        <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> 
                     ----------------------------------------------------------------->
                     </div>
                 </div>
@@ -98,21 +101,62 @@
             fin del nav
             ###################################### -->
     </header>
-    <main id="cardPag">
-        <div class="row mt-3">
-            <div class="col-6" id="imgCard">
-            </div>
+    <main>
+        <div class="border-bottom">
+        <h1 class="text-center">Envia tu consulta</h1>
+    </div>  
+        <div class="container-fluid w-75 mt-5 form-container ">
+            
+            <form novalidate class=" row mb-3 needs-validation" id="consultaForm">
+                <div class="col-xl-6 col-sm-12">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Luciano" maxlength="35"
+                        minlength="3" required>
+
+                    <div class="valid-feedback">
+                        Parece correcto!
+                    </div>
+                    <div class="invalid-feedback"> El nombre es requerido</div>
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text bg-bisque" id="inputGroupPrepend">@</span>
+                        <input name="email" type="email" placeholder="sneakers@sports.com" class="form-control" id="email"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Incorrecto
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-sm-12">
+                    <label for="consulta">Consulta</label>
+                    <textarea name="consulta" class="form-control " id="consulta" rows="10" style="resize: none;" required></textarea>
+                </div>
+                
+                <div class="col-xl-6 col-sm-12 mt-5">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <div class="input-group has-validation">
+                        <input type="number" class="form-control" id="telefono" aria-describedby="inputGroupPrepend" >
+                        <div class="valid-feedback">
+                            Parece correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                            Debe tener un minimo de 4 y maximo de 9
+                        </div>
+                    </div>
+                    
+                </div>
 
 
+                <div class="text-center">
+                    <button class="btn-contact mt-3 btn" type="submit"> Enviar </button>
+                </div>
 
-            <div class="col-6 " id="cardInfo">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-5 m-7" id="info-card"></div>
-            <div class="col-5 m-7 " id="info-card-extra"></div>
-
-        </div>
+            </form>
+            <div class="esfera responsive"></div>
+            <div class="esfera-2 responsive"></div>
         </div>
     </main>
     <footer>
@@ -154,15 +198,27 @@
                         </a>
                     </div>
 
-                </div>  
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="/js/paginaCard.js" type="module"></script>
-    <script src="/js/array-list-prod.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="/js/appi.js" type="module"></script>
+
+    <script>
+        (() => {
+            'use strict'
+
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()</script>
 </body>
