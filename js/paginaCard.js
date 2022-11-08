@@ -11,11 +11,11 @@ const cardPag = document.getElementById('cardPag')
         const idx = obtenerQueryParamId();
         const prod = Productos[idx]
         if(!prod.favorite){
-
-                imgCard.innerHTML = `
+                    imgCard.innerHTML = `
                     <img src="${prod.img}" class="img-fluid img-cover"/>
                     `
                     cardInfo.innerHTML =`
+                    <h1>${prod.name}</h1>
                     <code>CATEGORIA - ${prod.categorias}</code>
                     <H2>$${prod.price}</H2>
                     <div class="btn-outline">

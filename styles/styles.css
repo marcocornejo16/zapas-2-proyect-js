@@ -34,7 +34,6 @@ html{
 }
 .flex-img a img {
     width: 250px;
-
 }
 .icons-footer {
     color: white;
@@ -65,5 +64,10 @@ html{
     color: #555 ;
 }
                 
-
-
+.flex-footer {
+    text-align: center;
+    background-color:bisque;
+    font-family: ¨Nunito sans¨ sans-serif;
+    display: flex;
+    flex: 1;    
+}
