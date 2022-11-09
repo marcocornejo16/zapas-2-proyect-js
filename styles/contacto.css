@@ -1,0 +1,43 @@
+.form-container{
+    position: relative;
+}
+.esfera{
+    width: 180px;
+    height: 180px;
+    background-color: bisque; 
+    border-radius: 100%;
+    position: absolute;
+    top:-9%;
+    left: 90%;
+    filter: opacity(.5);
+
+    
+}
+.esfera-2{
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    border-radius: 100%;
+    position: absolute;
+    bottom:5px;
+    left: -7%;
+    opacity: .2;
+}
+
+
+
+.btn-contact{
+    color: #000;
+    background-color: #aaa; 
+    width: 100px;
+}
+.btn-contact:hover{
+    background-color:bisque;
+}
+
+
+@media screen and (max-width: 990px) {
+    .responsive{
+        display: none;
+    }
+}

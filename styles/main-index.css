@@ -13,25 +13,46 @@ html{
 }
 .cards-shadow{
     border-radius: 0px;
-    box-shadow: 2px 2px black;
+    filter:drop-shadow(5px 3px 5px black)
 }
 .cards-img{
     height: 10rem;
-
+    object-fit: contain;
 }
 
 .d-flex{
     justify-content:space-evenly;
 }
 
-.btn{
+.btn-sections{
+    text-decoration: none;
+    color: #000;
+    border-radius: 0px ;
+    transition: all .5s;
+    background-color: #eee;
+}
+.btn-sections:hover{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-cards {
     border-radius: 0px;
     transition: all .5s;
-;
+    border: none;
+
+    text-decoration: none;
+    color: #000;
 }
-.btn:hover{
+.text-dec-none{
+    text-decoration: none;
+}
+
+.btn-cards:hover{
     background:#000 ;
     color: #fff;
+    text-decoration: none;
 }
 
 .carousel-item{
@@ -61,11 +82,22 @@ html{
     display: flex;
     justify-content:space-between;     
 }
-m-1{
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.m-1{
     margin: 5px;
 }
+.m-0{
+    margin: 0px;
+    padding: 0px;
+}
+
 @media screen and (max-width:991px) {
     .responsive {
+        display: none;
+    }
+    .responsive-img img{
         display: none;
     }
     .responsive-destacada{
@@ -77,7 +109,7 @@ m-1{
     .cards-responsive{
         width: 300px;
         height: 350px;
-        margin: 6px;
+        margin: auto;
     }
 
 }
@@ -94,7 +126,10 @@ m-1{
         width: 300px;
         height: 150px;
     }
-    .responsive-submenu{
+
+}
+@media screen and (max-width: 650px) {
+    .responsive-submenu a{
         display: none;
     }
 }
@@ -114,11 +149,24 @@ m-1{
     justify-content: center;
 
 }
+.img-card-contain-futbol{
+    background:linear-gradient(0deg,#000,#000,#000,#000,#000,#000,#fff,#000,#000,#000,#000,#000,#000)
+
+}
+.img-card-contain-tenis{
+    background:linear-gradient(0deg, rgb(89, 202, 240),#fff,rgb(89, 202, 240))
+}
+
+
 .h-cards-section{
     height: 400px;
+    object-fit:cover;
+    width: 300px;
+    
 }
 .h-img-section{
-    height: 468px;
+    height: 505px;
+    
 }
 .color-w{
     color: #fff;
@@ -133,7 +181,7 @@ m-1{
     cursor:none;
 }
 .flex-cards{
-    flex-wrap: wrap;
+    margin: 2px;
 }
 
 .titles-products {
@@ -148,6 +196,7 @@ m-1{
     text-decoration: none;
     color: #fff;
 }
+
 .titles-products:hover{
     background-color: black;
     color: #fff;
@@ -161,4 +210,44 @@ m-1{
     justify-content: center;
     margin-top:30px;
 
+}
+
+.logo-footer{
+    width: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+.redes-footer{
+    display: flex;
+    justify-content: center;
+}
+.flex-footer {
+    text-align: center;
+    background-color: #111;
+    font-family: ¨Nunito sans¨ sans-serif;
+    display: flex;
+    flex: 1;    
+}
+.flex-img img {
+    width: 150px;
+
+}
+.icons-footer {
+    color: white;
+    padding: 1rem;
+    font-family: "Nunito sans" sans-serif;
+}
+
+.icons-footer a {
+    font-size: 12px;
+    color: black;
+    margin: 3px;
+}
+.icons-footer h3{
+    color: #000;
+}
+
+.bg-bisque{
+    background-color: bisque;
 }

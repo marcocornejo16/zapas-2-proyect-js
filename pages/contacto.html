@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6806c90ed3.js" crossorigin="anonymous"></script>
+
+    <title>SNEAKERS</title>
+
+</head>
+
+<body>
+    <header class="top-0 w-100 header-bar bg-bisque">
+        <!-- ######################################
+            comienzo del nav
+            ###################################### -->
+        <nav>
+            <nav class="navbar navbar-expand-md" id="colornav">
+                <div class="container-fluid">
+                    <div class="nombrefantasia">
+                        
+                            <a href="/index.html">
+                                <img src="/IMAGES/logo-sneakers.webp" width="80px" alt="" />
+                            </a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-light colornavbar">
+                                    <a class="nav-link active" aria-current="page" href="#">Quienes Somos</a>
+                                </button>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button type="button" class="btn btn-light colornavbar">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Producto
+                                    </a>
+                                    <ul class="dropdown-menu colornavbar" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Runing</a></li>
+                                        <li><a class="dropdown-item" href="#">Botines</a></li>
+                                        <li><a class="dropdown-item" href="#">Basquet</a></li>
+                                        <li><a class="dropdown-item" href="#">Tennis</a></li>
+                                        <li><a class="dropdown-item" href="#">Bikers</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Algo mas</a></li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <button type="button" class="btn btn-light colornavbar">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                            </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-light colornavbar">
+                                    <a class="nav-link" href="#"><img
+                                            src="https://w7.pngwing.com/pngs/225/984/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping.png"
+                                            width="40" alt=""></a>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-light colornavbar">
+                                    <a class="nav-link" href="/pages/registrate.html">Registrate</a>
+                                </button>
+                            </li>
+                        </ul>
+                        <!----------------------------------------------------
+                        COMENTADO
+                        <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> 
+                    ----------------------------------------------------------------->
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <!-- ######################################
+            fin del nav
+            ###################################### -->
+    </header>
+    <main>
+        <div class="border-bottom">
+        <h1 class="text-center">Envia tu consulta</h1>
+    </div>  
+        <div class="container-fluid w-75 mt-5 form-container ">
+            
+            <form novalidate class=" row mb-3 needs-validation" id="consultaForm">
+                <div class="col-xl-6 col-sm-12">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Luciano" maxlength="35"
+                        minlength="3" required>
+
+                    <div class="valid-feedback">
+                        Parece correcto!
+                    </div>
+                    <div class="invalid-feedback"> El nombre es requerido</div>
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text bg-bisque" id="inputGroupPrepend">@</span>
+                        <input name="email" type="email" placeholder="sneakers@sports.com" class="form-control" id="email"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Incorrecto
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-sm-12">
+                    <label for="consulta">Consulta</label>
+                    <textarea name="consulta" class="form-control " id="consulta" rows="10" style="resize: none;" required></textarea>
+                </div>
+                
+                <div class="col-xl-6 col-sm-12 mt-5">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <div class="input-group has-validation">
+                        <input type="number" class="form-control" id="telefono" aria-describedby="inputGroupPrepend" >
+                        <div class="valid-feedback">
+                            Parece correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                            Debe tener un minimo de 4 y maximo de 9
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="text-center">
+                    <button class="btn-contact mt-3 btn" type="submit"> Enviar </button>
+                </div>
+
+            </form>
+            <div class="esfera responsive"></div>
+            <div class="esfera-2 responsive"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row flex-footer bg-bisque">
+                <div class="col-sm-3">
+                    <h3 class="mt-3">Servicio al Cliente</h3>
+                    <ul class="footer-list">
+                        <li><a href="/pages/contacto.html">Contacto</a></li>
+                        <li><a href="/pages/404.html">Devoluciones</a></li>
+                        <li><a href="/pages/404.html">Envios</a></li>
+                        <li><a href="/pages/404.html"> Como comprar</a></li>
+                        <li><a href="/pages/404.html">Compras con tarj0eta</a></li>
+                        <li><a href="/pages/404.html">Compras desde fuera de Argentina</a>
+                    </ul>
+
+                </div>
+                <div class="col-sm-6 flex-img">
+                    <a href="#"><img src="/IMAGES/logo-sneakers.webp" alt="" class="logo-index"></a>
+                    <p><i class="fa-regular fa-copyright p-1 "></i>Copyright</p>
+                </div>
+                <div class="col-sm-3 ">
+                    <div class="icons-footer">
+                        <h3>Seguinos en nuestras redes sociales</h3>
+                        <a href="https://www.google.com.ar/?hl=es" target="_blank">
+                            <i class="fa-brands fa-twitter fa-lg">Twitter</i><br>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook fa-lg"> Facebook</i><br>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-lg"> Instagram</i><br>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube fa-lg">Youtube</i><br>
+                        </a>
+                        <a href="https://www.tiktok.com/es/" target="_blank">
+                            <i class="fa-brands fa-tiktok fa-lg">TikTok</i><br>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        (() => {
+            'use strict'
+
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()</script>
+</body>

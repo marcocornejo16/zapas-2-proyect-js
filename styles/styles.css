@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&display=swap');
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
 #colornav {background-color: rgb(245, 238, 225);
     padding: 0;}
 .nombrefantasia{font-family: 'Anton', sans-serif;}
@@ -7,5 +11,63 @@ padding: 0;}
 padding: 0;}
 
 
+html{
+    box-sizing:content-box;
+    overflow-x: hidden;
 
+}
+.logo-footer{
+    width: 100px;
+    justify-content: center;
+    display: flex;
+}
 
+.redes-footer{
+    display: flex;
+    justify-content: center;
+}
+.flex-footer {
+    background-color: #111;
+    font-family: ¨Nunito sans¨ sans-serif;
+    display: flex;
+    flex: 1;    
+}
+.flex-img a img {
+    width: 250px;
+}
+.icons-footer {
+    color: white;
+    padding: 1rem;
+    font-family: "Nunito sans" sans-serif;
+}
+
+.icons-footer a {
+    font-size: 12px;
+    color: black;
+    margin: 3px;
+}
+.icons-footer h3{
+    color: #000;
+}
+
+.bg-bisque{
+    background-color: bisque;
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-list a:hover{
+    color: #555 ;
+}
+                
+.flex-footer {
+    text-align: center;
+    background-color:bisque;
+    font-family: ¨Nunito sans¨ sans-serif;
+    display: flex;
+    flex: 1;    
+}
