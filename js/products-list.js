@@ -21,7 +21,7 @@ function agregarProducts(){
          <td>${elem.price}</td>
          <td>${elem.categorias}</td>
          <td>  
-            span onclick="setFavorite(${index})">${elem.favorito ? `<i class="fa-solid fa-star text-yellow"></i>` : `<i class="fa-regular fa-star"></i>`} </span>
+         <span onclick="setFavorite(${index})">${elem.favorito} <i class="fa-solid fa-star text-yellow"></i> </span>
          </td>
          <td>${elem.stock ? `<i class="fa-solid fa-check"></i>` : ``}</td>
          <td class="">
