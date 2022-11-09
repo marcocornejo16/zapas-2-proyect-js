@@ -15,7 +15,7 @@ const renderProducts = () =>{
                 <div class="col-md-6">
                     <img src=${zapas.img} class="img-fluid img-card-destacada">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                     <div class="card-body">
                     <h5 class="card-title ">${zapas.name}</h5>
                     <p class="card-text w-100 responsive-destacada">${zapas.description}</p>
@@ -26,7 +26,7 @@ const renderProducts = () =>{
         } else if (zapas.categorias === 'Running') {
             
             cardsIndex.innerHTML += `
-            <div class="card m-0 cards-shadow mb-5 cards-responsive col-sm-12 col-md-6 col-xl-2">
+            <div class="card flex-cards cards-shadow mb-5 cards-responsive col-sm-12 col-md-6 col-xl-2">
             
                 <img src=${zapas.img} class="card-img-top m-0 img-fluid  cards-img">
                 
@@ -40,7 +40,7 @@ const renderProducts = () =>{
         </div>  `
         } else if (zapas.categorias === 'Botines') {
             cardsFutbol.innerHTML += `
-            <div class="card m-0 cards-shadow cards-responsive mb-5 col-sm-12 col-md-6 col-xl-2">
+            <div class="card flex-cards cards-shadow cards-responsive mb-5 col-sm-12 col-md-6 col-xl-2">
             
                 <img src=${zapas.img} class="card-img-top m-0 img-fluid  cards-img">
                 
@@ -54,7 +54,7 @@ const renderProducts = () =>{
         </div>`
         } else if (zapas.categorias === 'Tenis')  {
             cardsTennis.innerHTML += `
-            <div class="card m-0 cards-shadow cards-responsive mb-5 col-sm-12 col-md-6 col-xl-2">
+            <div class="card flex-cards cards-shadow cards-responsive mb-5 col-sm-12 col-md-6 col-xl-2">
                 <div>
                 <img src=${zapas.img} class="card-img-top img-fluid m-0 cards-img">
                 </div>
@@ -63,7 +63,8 @@ const renderProducts = () =>{
                 <p class="card-text"><b>Talle:</b> ${zapas.talle}</p>
                 <p class="card-text text-cards"> ${zapas.description}</p>
                 </div>
-                <button class="btn-cards m-0"> <a href="/pages/paginaCard.html?id=${index}" class="text-dec-none">Ver mas</a></button>
+                <button class="btn-cards "> <a href="/pages/paginaCard.html?id=${index}" class="text-dec-none">Ver mas</a></button>
+                
                 
         </div>`
         }

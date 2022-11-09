@@ -9,7 +9,8 @@ export const Productos = [
         description: 'Fusión entre el alto rendimiento y la moda. Son unas zapatillas que ofrecen: Ajuste perfecto: la parte del tobillo de la zapatilla es de una malla flexible que consigue que la zapa se ajuste perfectamente a ti físico y a tu forma de correr.',
         price: 39599,
         descuento:false   
-    },
+    }
+    ,
     {
         name:'ADIDAS FLUIDFLOW 2.0',
         categorias:'Running', 

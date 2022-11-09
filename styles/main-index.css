@@ -41,13 +41,14 @@ html{
     border-radius: 0px;
     transition: all .5s;
     border: none;
-    width: 200;
+
     text-decoration: none;
     color: #000;
 }
 .text-dec-none{
     text-decoration: none;
 }
+
 .btn-cards:hover{
     background:#000 ;
     color: #fff;
@@ -108,7 +109,7 @@ html{
     .cards-responsive{
         width: 300px;
         height: 350px;
-        margin: 6px;
+        margin: auto;
     }
 
 }
@@ -164,7 +165,7 @@ html{
     
 }
 .h-img-section{
-    height: 468px;
+    height: 505px;
     
 }
 .color-w{
@@ -180,7 +181,7 @@ html{
     cursor:none;
 }
 .flex-cards{
-    flex-wrap: wrap;
+    margin: 2px;
 }
 
 .titles-products {
