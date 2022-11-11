@@ -62,20 +62,18 @@ let newProduct = {
     favorito: forElements.favorito.checked
 }
 
-console.log(newProduct);
-agregarProducts();
 localStorage.setItem('products',JSON.stringify(Products));
-
+agregarProducts()
 
 const formData = new FormData(AddProductForm);
     const otroProduct = Object.fromEntries(formData)
 
-    newProduct.price = parseInt(otroProduct.price)
+    // newProduct.price = parseInt(otroProduct.price)
 
-    console.log(otroProduct)
+    // console.log(otroProduct)
 
-    otroProduct.jostick = !!otroProduct.jostick;
-    otroProduct.stock = !!otroProduct.stock;
+    // otroProduct.favorite = !!otroProduct.favorite;
+    // otroProduct.stock = !!otroProduct.stock;
 
     if(editable) {
         Products[editable] = newProduct;
@@ -117,7 +115,7 @@ function editProduct(idx) {
     formEl.price.value = productToEdit.price;
     formEl.image.value =  productToEdit.image;
     formEl.stock.checked = productToEdit.stock;
-    
+
     
 
     AddProductForm.setAttribute('edit', idx);
@@ -134,8 +132,7 @@ function editProduct(idx) {
     })
     AddProductForm.setAttribute('data-edit', idx);
 
-    localStorage.setItem('products',JSON.stringify(Products));
-
+    // localStorage.setItem('products',JSON.stringify(Products));
 }
 
 
