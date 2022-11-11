@@ -1,0 +1,16 @@
+.header-bar{
+    z-index: 2 !important;
+}
+#colornav {background-color: rgb(245, 238, 225);
+    padding: 0;}
+.nombrefantasia{font-family: 'Anton', sans-serif;}
+#colordrop {background-color: rgb(245, 238, 225);
+padding: 0;}
+.colornavbar{background-color: rgb(245, 238, 225);
+padding: 0;}
+
+.bg-body {
+    min-height:100vh;
+    margin: 0;
+    background: linear-gradient(to top,rgb(199, 187, 162),white)}
+.espacio{margin: 100px;}
