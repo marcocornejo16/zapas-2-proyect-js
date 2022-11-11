@@ -59,7 +59,7 @@ let newProduct = {
     price: forElements.price.valueAsNumber,
     image: forElements.image.value,
     stock: forElements.stock.checked,
-    favorito: forElements.favorito.checked,
+    favorito: forElements.favorito.checked
 }
 
 console.log(newProduct);
