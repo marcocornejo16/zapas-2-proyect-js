@@ -1,13 +1,10 @@
 
-
-
 const Products =  JSON.parse(localStorage.getItem('products')) || [];
 const tableBodyHTML = document.getElementById('table-body-zapas');
 const AddProductForm = document.querySelector('#FormProducts');
 let editable;
 // console.log(tableBodyHTML)
 // console.log(Products)
-
 
 function agregarProducts(){
     tableBodyHTML.innerHTML ='';
@@ -42,7 +39,6 @@ function agregarProducts(){
 agregarProducts();
 
 
-
 AddProductForm.addEventListener('submit', (event) =>{
 if(AddProductForm.checkValidity()=== false){
     return;
@@ -59,21 +55,22 @@ let newProduct = {
     price: forElements.price.valueAsNumber,
     image: forElements.image.value,
     stock: forElements.stock.checked,
-    favorito: forElements.favorito.checked
+    favorito: forElements.favorito.checked,
 }
 
+console.log(newProduct);
+agregarProducts();
 localStorage.setItem('products',JSON.stringify(Products));
-agregarProducts()
 
 const formData = new FormData(AddProductForm);
     const otroProduct = Object.fromEntries(formData)
 
-    // newProduct.price = parseInt(otroProduct.price)
+    newProduct.price = parseInt(otroProduct.price)
 
-    // console.log(otroProduct)
+    console.log(otroProduct)
 
-    // otroProduct.favorite = !!otroProduct.favorite;
-    // otroProduct.stock = !!otroProduct.stock;
+    otroProduct.jostick = !!otroProduct.jostick;
+    otroProduct.stock = !!otroProduct.stock;
 
     if(editable) {
         Products[editable] = newProduct;
@@ -86,7 +83,6 @@ const formData = new FormData(AddProductForm);
     //Guardamos el array de productos modificado
     localStorage.setItem('products', JSON.stringify(Products))
 
-
     // Pintamos nuevamente la tabla para que reflejen los cambios
     agregarProducts();
 
@@ -95,9 +91,7 @@ const formData = new FormData(AddProductForm);
 
 
 
-
 })
-
 
 
 function deleteProduct(idx) {
@@ -115,7 +109,7 @@ function editProduct(idx) {
     formEl.price.value = productToEdit.price;
     formEl.image.value =  productToEdit.image;
     formEl.stock.checked = productToEdit.stock;
-
+    
     
 
     AddProductForm.setAttribute('edit', idx);
@@ -132,9 +126,9 @@ function editProduct(idx) {
     })
     AddProductForm.setAttribute('data-edit', idx);
 
-    // localStorage.setItem('products',JSON.stringify(Products));
-}
+    localStorage.setItem('products',JSON.stringify(Products));
 
+}
 
     function setFavorite(indice) {
         console.log('Hola')
@@ -146,3 +140,4 @@ function editProduct(idx) {
         agregarProducts()
         localStorage.setItem('products', JSON.stringify(Products))
     }
+
