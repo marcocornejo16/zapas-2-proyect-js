@@ -4,7 +4,7 @@ const cardsIndex = document.getElementById('cards-main');
 const cardFavorite = document.getElementById('card-favorite')
 const cardsFutbol = document.getElementById('cards-futbol')
 const cardsTennis = document.getElementById('cards-tenis')
-const descuentoProd = document.getElementById('descuento')
+
 
 const renderProducts = () =>{
     Productos.forEach((zapas, index) => {
