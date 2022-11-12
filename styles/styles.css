@@ -74,3 +74,16 @@ html{
 .bg-yellow{
     background-color: yellow;
 }
+
+.marcas-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-about img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
