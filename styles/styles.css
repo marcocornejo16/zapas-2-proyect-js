@@ -87,3 +87,25 @@ html{
     margin-top: 10px;
     border-radius: 50%;
 }
+.img-about-container{
+    position: relative;
+}
+.img-about{
+    height: 150px;
+    filter: sepia(.5) opacity(.8) brightness(.5);
+    
+}
+.title-img{
+    position: absolute;
+    top: 32%;
+    left: 30%;
+}
+.title-img h1{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.text-about p{
+    font-size: 1.5rem;
+
+}
