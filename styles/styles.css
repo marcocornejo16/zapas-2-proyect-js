@@ -71,3 +71,6 @@ html{
     display: flex;
     flex: 1;    
 }
+.bg-yellow{
+    background-color: yellow;
+}
