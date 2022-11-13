@@ -115,3 +115,17 @@ html{
     display: flex;
 }
 
+
+.btn-form{
+    background-color: black;
+    color: bisque;
+    border: black;
+    padding: .5rem;
+    margin: 1.5rem;
+}
+.btn-form:hover{
+    background-color: bisque;
+    color: #000;
+}
+
+
