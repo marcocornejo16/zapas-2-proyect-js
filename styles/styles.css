@@ -3,7 +3,8 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 #colornav {background-color: rgb(245, 238, 225);
-    padding: 0;}
+    padding: 0;;
+}
 .nombrefantasia{font-family: 'Anton', sans-serif;}
 #colordrop {background-color: rgb(245, 238, 225);
 padding: 0;}
@@ -15,6 +16,15 @@ html{
     box-sizing:content-box;
     overflow-x: hidden;
 
+}
+@media screen and (max-width:991px) {
+    .responsive {
+        display: none;
+    }
+    .form-responsive{
+        width: 400px;
+        margin: auto;
+    }
 }
 .logo-footer{
     width: 100px;
