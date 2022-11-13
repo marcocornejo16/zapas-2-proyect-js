@@ -18,7 +18,7 @@ function agregarProducts(){
         <td>${elem.name}</td>
         <td>${elem.description}</td>
         <td>${elem.price}</td>
-        <td>${elem.categorias}</td>
+        <td>${elem.categoria}</td>
         <td>  
         <span onclick="setFavorite(${index})">${elem.favorito ? `<i class="fa-solid fa-star"></i>` : `<i class="fa-regular fa-star"></i>`} </span>
             </button>
@@ -60,7 +60,9 @@ let newProduct = {
     image: forElements.image.value,
     stock: forElements.stock.checked,
     favorito: forElements.favorito.checked,
+    categoria:forElements.categoria.value
 }
+console.dir(event)
 
 console.log('Nuevo producto cargado')
 agregarProducts();
@@ -111,6 +113,7 @@ function editProduct(idx) {
     formEl.image.value =  productoAEditar.image;
     formEl.stock.checked = productoAEditar.stock;
     formEl.favorito.checked = productoAEditar.favorito;
+    formEl.categoria.value = productoAEditar.categoria;
 
     
     console.log(productoAEditar)
