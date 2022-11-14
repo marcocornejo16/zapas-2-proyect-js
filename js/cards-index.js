@@ -6,6 +6,7 @@ let cardsFutbol = document.getElementById("cards-futbol");
 let cardsTennis = document.getElementById("cards-tenis");
 
 const Products = JSON.parse(localStorage.getItem("products")) || [];
+
 //Hacemos arrays vacios donde se van guardando los productos de acuerdo a la categoria
 let running = [];
 let botines = [];
@@ -24,7 +25,7 @@ Products.forEach((prod) => {
         running.push(prod);
     }
 });
-console.log(Products);
+
 //recorremos cada array de categoria y llamamos a la funcion para pintar las cards
 running.forEach((prod) => {
     newCard(prod, cardsIndex);
@@ -63,4 +64,7 @@ if(prod.favorito == true){
                 </div>`
 }
 };
+
+
+
 
