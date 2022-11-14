@@ -1,7 +1,7 @@
 const tableBody = document.getElementById("table-body");
 const registroUsuario = document.querySelector("#registroUsuario");
 
-const user = JSON.parse(localStorage.getItem('currentUser')) || [];
+const users = JSON.parse(localStorage.getItem('users')) || [];
 
 registroUsuario.addEventListener("submit", function(evt) {
 
@@ -13,7 +13,7 @@ registroUsuario.addEventListener("submit", function(evt) {
 
         const usersElements = evt.target.elements
         console.dir(usersElements)
-        let newUsers = {
+        let newUser = {
             name: usersElements.name.value,
             lastName: usersElements.lastName.value,
             email: usersElements.email.value,
@@ -23,13 +23,26 @@ registroUsuario.addEventListener("submit", function(evt) {
             
     }
     console.log('Se ha cargado un nuevo usuario')
-    console.dir(newUsers)
+    console.dir(newUser)
 
-    user.push(newUsers)
+    const emailExist = checkIfUserExist(newUser.email)
+    if(emailExist) {
+        // swal con mensaje de alerta
 
-    registroUsuario.reset()
-    localStorage.setItem('currentUser', JSON.stringify(user))
+        
+    } else {
+        // Antes de guardar
+        users.push(newUser)
+        registroUsuario.reset()
+        localStorage.setItem('users', JSON.stringify(users))
+    }
+   
+    
 })
+
+function checkIfUserExist(email) {
+    return users.some(usr => usr.email === email);
+}
 
 
 
