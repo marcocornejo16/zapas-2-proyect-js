@@ -57,7 +57,7 @@ if(user.password === passwordInput) {
     setTimeout(function() {
         if(user.role === 'ADMIN_ROLE') {
             window.location.href = '/pages/table-products.html'
-        } else {
+        } else{
             window.location.href = '/index.html'
         }
     }, 2000)
