@@ -25,7 +25,12 @@ html{
         width: 400px;
         margin: auto;
     }
+    .responsive-img img{
+        display: none;
+    }
+
 }
+
 .logo-footer{
     width: 100px;
     justify-content: center;

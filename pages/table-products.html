@@ -39,7 +39,7 @@
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <button type="button" class="btn btn-light colornavbar">
-                      <a class="nav-link active" aria-current="page" href="#">Quienes Somos</a>
+                      <a class="nav-link active" aria-current="page" href="/pages/about.html">Quienes Somos</a>
                     </button>
                     
                   </li>
@@ -59,8 +59,9 @@
                     </ul>
                   </button>
                   </li>
-                  <button type="button" class="btn btn-light colornavbar">
                   <li class="nav-item">
+                    <button type="button" class="btn btn-light colornavbar">
+
                     <a class="nav-link" href="/pages/contacto.html">Contacto</a>
                   </button>
                   </li>
@@ -87,11 +88,10 @@
     </header>
         
         <main class="container-fluid">
-            <h1>Tabla de productos</h1>
-            <div class="row">
-              <div class="col-12 col-md-6 ">
+            <div class="row mt-5">
+              <div class="col-12 col-md-6">
                 <h2>Carga de Productos</h2>
-                    <form class="mb-3 needs-validation row" id="FormProducts">
+                    <form class=" mb-3 needs-validation row" id="FormProducts">
                         <div class=" col-12 col-md-6 mb-3">
                             <label for="marca" class="form-label">Marca-Modelo</label>
                             <input name="name" type="text" class="form-control" id="Marca de producto" required minlength="5" maxlength="50">
@@ -168,12 +168,13 @@
 
                     </form>
               </div>
-              <div class=" col-12 col-md-6">
-                <table class="table table-striped">
+    
+              <div class=" col-12 col-md-6 table-responsive-sm">
+                <table class="table table-striped table-hover table-bordered" >
                     <thead>
                       <tr>
                         <th scope="col">Imagen</th>
-                        <th scope="col">Marca-modelo</th>
+                        <th scope="col">Marca</th>
                         <th scope="col">Descripcion</th>
                         <th scope="col">Precio</th>
                         <th scope="col">Categoria</th>
@@ -186,6 +187,7 @@
                         
                     </tbody>
                   </table>
+    
               </div>
             </div>
             <footer >
@@ -261,5 +263,27 @@
   })
 })()
         </script>
+            <script>
+              //       Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function () {
+                  'use strict'
+      
+                  //   Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.querySelectorAll('.needs-validation')
+      
+                  //        Loop over them and prevent submission
+                  Array.prototype.slice.call(forms)
+                      .forEach(function (form) {
+                          form.addEventListener('submit', function (event) {
+                              if (!form.checkValidity()) {
+                                  event.preventDefault()
+                                  event.stopPropagation()
+                              }
+      
+                              form.classList.add('was-validated')
+                          }, false)
+                      })
+              })()
+          </script>
         
 </body>

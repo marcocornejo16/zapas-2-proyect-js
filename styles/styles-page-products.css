@@ -2,7 +2,8 @@
 *{
     font-family: 'Nunito Sans', sans-serif;
 }
-table-img{
-    width:70px;
-    object-fit: cover;
+.table-img{
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
 }

@@ -13,7 +13,7 @@ function agregarProducts(){
     Products.forEach((elem, index) => {
         tableBodyHTML.innerHTML +=  `<tr>
         <td>
-            <img src="${elem.image}" alt="" class="table-img img-fluid">
+            <img src="${elem.image}" alt="" class="table-img img-fluid responsive">
         </td>
         <td>${elem.name}</td>
         <td>${elem.description}</td>
@@ -47,6 +47,7 @@ AddProductForm.addEventListener('submit', (event) =>{
 if(AddProductForm.checkValidity()=== false){
     return;
 }
+
 
 event.preventDefault();
 console.dir (event.target.elements);
@@ -86,11 +87,12 @@ const formData = new FormData(AddProductForm);
 
     AddProductForm.reset()
 
-    
+
     console.log(Products)
     localStorage.setItem('products', JSON.stringify(Products))
     agregarProducts();
     AddProductForm.reset()
+    
 })
 
 
