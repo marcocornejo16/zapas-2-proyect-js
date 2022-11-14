@@ -143,6 +143,18 @@ html{
     color: #000;
 }
 
+.btn-register{
+    background-color: black;
+    color: bisque;
+    border: black;
+    padding: .5rem;
+    margin: 1.5rem;
+    width: 200px;
+}
+.btn-register:hover{
+    background-color: bisque;
+    color: #000;
+}
 
 .form-login{
     background:url(/IMAGES/bg-login.jpg);
@@ -152,6 +164,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow( 10px 10px 10px black);
 
 }
 .btn-form-container button{

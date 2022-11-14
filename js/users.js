@@ -14,65 +14,20 @@ if(usersOriginal.length === 0) {
     localStorage.setItem('users', JSON.stringify(usersOriginal))
 }
 
-const users = [
-    {
-        name: `John Doe`,
-        email: `johndoe@gmail.com`,
-        password: `alfabeta`,
-        active: true,
-        role: `ADMIN_ROLE`
-    },
-    {
-        name: `Jose Perez`,
-        email: `joseperez@gmail.com`,
-        password: `1234`,
-        active: true,
-        role: `USER_ROLE`
-    },
-    {
-        name: `Usuario Inactivo`,
-        email: `inactivo@gmail.com`,
-        password: `1234`,
-        active: false,
-        role: `USER_ROLE`
-    },
-    {
-        name: `Maria Gimenez`,
-        email: `mariagimenez@gmail.com`,
-        password: `1234`,
-        active: true,
-        role: `USER_ROLE`
 
-    },
-    {
-        name: `Eusebio Cobos`,
-        email: `eusebio@gmail.com`,
-        password: `alfabeta`,
-        active: false,
-        role: `USER_ROLE`
-    },
-    {
-        name: `Usuario Registrado`,
-        email: `usuario@gmail.com`,
-        password: `1234`,
-        active: true,
-        role: `USER_ROLE`
-    }
-];
 
 const user = JSON.parse(localStorage.getItem('currentUser'));
 
 const loginForm = document.querySelector('#login-form');
 // Debería escuchar el evento submit
 loginForm.addEventListener('submit', (evt)=> {
-    // if(loginForm.checkValidity() === false) return    // ** Si usamos el validador de boostrap y aplicamos el "novalidate" al html del form
     evt.preventDefault();
     // Obtener lo que el user puso en los campos
     const emailInput = loginForm.elements.email.value;
     const passwordInput = evt.target.elements.password.value;
 
 // Verificar si existe un usuario con ese email
-const user = users.find((usr) => {
+const user = usersOriginal.find((usr) => {
     if(usr.email === emailInput) {
         return true
     }
