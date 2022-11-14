@@ -139,3 +139,20 @@ html{
 }
 
 
+.form-login{
+    background:url(/IMAGES/bg-login.jpg);
+    width: 700px;
+    height: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-form-container button{
+    width: 200px;
+}
+.pag-login{
+    display: flex;
+    justify-content: center;
+}
