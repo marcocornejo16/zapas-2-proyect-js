@@ -1,18 +1,19 @@
-import { Productos } from "./array-list-prod.js"
-
-const imgCard = document.getElementById('imgCard')
-const cardInfo = document.getElementById('cardInfo')
-const infoCard = document.getElementById('info-card')
-const infoCardExtra = document.getElementById('info-card-extra')
-const cardPag = document.getElementById('cardPag')
+let imgCard = document.getElementById('imgCard')
+let cardInfo = document.getElementById('cardInfo')
+let infoCard = document.getElementById('info-card')
+let infoCardExtra = document.getElementById('info-card-extra')
+let cardPag = document.getElementById('cardPag')
 
 
+
+const Products =  JSON.parse(localStorage.getItem('products')) || [];
+console.log(Products)
     const renderProductsPag = () =>{
         const idx = obtenerQueryParamId();
-        const prod = Productos[idx]
-        if(!prod.favorite){
+        const prod = Products[idx]
+            if(prod){
                     imgCard.innerHTML = `
-                    <img src="${prod.img}" class="img-fluid img-cover"/>
+                    <img src="${prod.image}" class="img-fluid img-cover"/>
                     `
                     cardInfo.innerHTML =`
                     <h1>${prod.name}</h1>
@@ -75,7 +76,11 @@ const cardPag = document.getElementById('cardPag')
             const index = parmsEntries.id;
             return index
 
+
+
         }
 
         renderProductsPag()
     
+
+        

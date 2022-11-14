@@ -53,7 +53,7 @@ event.preventDefault();
 console.dir (event.target.elements);
 
 const forElements = event.target.elements;
-
+console.dir(event)
 let newProduct = {
     name: forElements.name.value,
     description: forElements.description.value,
@@ -61,9 +61,9 @@ let newProduct = {
     image: forElements.image.value,
     stock: forElements.stock.checked,
     favorito: forElements.favorito.checked,
-    categoria:forElements.categoria.value
+    categoria:forElements.categoria.value,
 }
-console.dir(event)
+
 
 console.log('Nuevo producto cargado')
 agregarProducts();

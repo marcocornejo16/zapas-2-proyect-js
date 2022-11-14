@@ -1,18 +1,18 @@
-import { Productos } from "./array-list-prod.js";
-
 const imgCardFavorite = document.getElementById('imgCardDestacada')
 const infoCardFavorite = document.getElementById('cardInfoDestacada')
 const infoCard = document.getElementById('info-destacada')
 const infoExtra = document.getElementById('info-extra')
 
-Productos.forEach(zapaFavorite =>{
+const Products =  JSON.parse(localStorage.getItem('products')) || [];
+
+Products.forEach(zapaFavorite =>{
     if(zapaFavorite.favorite === true){
         imgCardFavorite.innerHTML +=
-        `<img src="${zapaFavorite.img}" class="img-fluid">`
+        `<img src="${zapaFavorite.image}" class="img-fluid">`
         
         infoCardFavorite.innerHTML=`
         <h1>${zapaFavorite.name}</h1>
-        <code>CATEGORIA - ${zapaFavorite.categorias}</code>
+        <code>CATEGORIA - ${zapaFavorite.categoria}</code>
                     <H2>$${zapaFavorite.price}</H2>
                     <div class="btn-outline">
                         <a href="#" class="btn btn-primary page-card btn">35</a>
