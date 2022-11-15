@@ -8,7 +8,7 @@ const AddProductForm = document.querySelector('#FormProducts');
 let editable;
 
 
-function agregarProducts() {
+function pintarTabla() {
     tableBodyHTML.innerHTML = '';
     Products.forEach((elem, index) => {
         tableBodyHTML.innerHTML += `<tr>
@@ -24,6 +24,7 @@ function agregarProducts() {
             </button>
         </td>
         <td>${elem.stock ? `<i class="fa-solid fa-check"></i>` : ``}</td>
+        <td>${elem.descuento ? `<i class="fa-solid fa-check"></i>` : ``}</td>
         <td class="">
                     <div class="d-flex">
                     <button class="btn btn-success p-1 me-2" onclick="editProduct(${index})">
@@ -38,7 +39,7 @@ function agregarProducts() {
     });
 }
 
-agregarProducts();
+pintarTabla();
 
 
 AddProductForm.addEventListener('submit', (event) => {
@@ -62,11 +63,12 @@ AddProductForm.addEventListener('submit', (event) => {
         stock: forElements.stock.checked,
         favorito: forElements.favorito.checked,
         categoria: forElements.categoria.value,
+        descuento: forElements.descuento.checked,
     }
 
 
     console.log('Nuevo producto cargado')
-    agregarProducts();
+    pintarTabla();
     localStorage.setItem('products', JSON.stringify(Products));
 
     const formData = new FormData(AddProductForm);
@@ -76,8 +78,8 @@ AddProductForm.addEventListener('submit', (event) => {
 
     console.log(newProduct)
 
-    newProduct.favorito = !!otroProduct.favorito;
-    newProduct.stock = !!otroProduct.stock;
+    // newProduct.favorito = !!otroProduct.favorito;
+    // newProduct.stock = !!otroProduct.stock;
 
     if (editable >= 0) {
         Products[editable] = newProduct;
@@ -90,7 +92,7 @@ AddProductForm.addEventListener('submit', (event) => {
 
     console.log(Products)
     localStorage.setItem('products', JSON.stringify(Products))
-    agregarProducts();
+    pintarTabla();
     AddProductForm.reset()
 
 })
@@ -100,7 +102,7 @@ function deleteProduct(idx) {
     console.log(`Producto borrado`)
     Products.splice(idx, 1);
     localStorage.setItem('products', JSON.stringify(Products))
-    agregarProducts();
+    pintarTabla();
 }
 
 function editProduct(idx) {
@@ -116,6 +118,7 @@ function editProduct(idx) {
     formEl.stock.checked = productoAEditar.stock;
     formEl.favorito.checked = productoAEditar.favorito;
     formEl.categoria.value = productoAEditar.categoria;
+    formEl.descuento.checked = productoAEditar.descuento;
 
 
     console.log(productoAEditar)
@@ -148,6 +151,6 @@ function setFavorite(idx) {
 
 
     console.log(Products);
-    agregarProducts()
+    pintarTabla()
     localStorage.setItem('products', JSON.stringify(Products))
 }

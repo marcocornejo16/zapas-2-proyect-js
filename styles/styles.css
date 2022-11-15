@@ -2,13 +2,13 @@
 *{
     font-family: 'Nunito Sans', sans-serif;
 }
-#colornav {background-color: rgb(245, 238, 225);
+#colornav {background-color: rgb(255, 238, 208);
     padding: 0;;
 }
 .nombrefantasia{font-family: 'Anton', sans-serif;}
 #colordrop {background-color: rgb(245, 238, 225);
 padding: 0;}
-.colornavbar{background-color: rgb(245, 238, 225);
+.colornavbar{background-color:rgb(255, 238, 208);
 padding: 0;}
 
 
@@ -194,3 +194,35 @@ font-weight: bold;
     font-weight: bolder;
     color: black;
 }
+
+.btn-nav{
+    transition: .3s;
+}
+.btn-nav:hover{
+    background-color: bisque;
+    font-size: 18px;
+}
+
+.stock-cards{
+    background-color: rgb(0, 206, 0);
+    width: 70px;
+    text-align: center;
+}
+.stock-cards p{
+    font-weight: bolder;
+    color: #fff;
+}
+
+.desc-cards{
+    background-color: yellow;
+    width: 80px;
+    text-align: center;
+    }
+    .desc-cards p{
+        font-weight: bolder;
+        color: #000;
+
+    }
+    .none p{
+        background-color: white;
+    }

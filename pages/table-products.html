@@ -14,6 +14,7 @@
 <script src="https://kit.fontawesome.com/6806c90ed3.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/styles/main-index.css">
 <link rel="stylesheet" href="/styles/styles-page-products.css">
+<link rel="icon" href="/IMAGES/logo-sneakers.webp">
 
     <title>SNEAKERS</title>
 
@@ -38,41 +39,47 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <button type="button" class="btn btn-light colornavbar">
+                    <button type="button" class="btn btn-nav colornavbar">
+                      <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </button>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-nav colornavbar">
                       <a class="nav-link active" aria-current="page" href="/pages/about.html">Quienes Somos</a>
                     </button>
                     
                   </li>
                   <li class="nav-item dropdown">
-                    <button type="button" class="btn btn-light colornavbar">
+                    <button type="button" class="btn btn-nav colornavbar">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Producto
                     </a>
                     <ul class="dropdown-menu colornavbar" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Runing</a></li>
-                      <li><a class="dropdown-item" href="#">Botines</a></li>
-                      <li><a class="dropdown-item" href="#">Basquet</a></li>
-                      <li><a class="dropdown-item" href="#">Tennis</a></li>
-                      <li><a class="dropdown-item" href="#">Bikers</a></li>
+                      <li><a class="dropdown-item" href="/pages/404.html">Running</a></li>
+                      <li><a class="dropdown-item" href="/pages/404.html">Botines</a></li>
+                      <li><a class="dropdown-item" href="/pages/404.html">Basquet</a></li>
+                      <li><a class="dropdown-item" href="/pages/404.html">Tennis</a></li>
+                      <li><a class="dropdown-item" href="/pages/404.html">Bikers</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Algo mas</a></li>
                     </ul>
                   </button>
                   </li>
                   <li class="nav-item">
-                    <button type="button" class="btn btn-light colornavbar">
+                    <button type="button" class="btn btn-nav colornavbar">
 
                     <a class="nav-link" href="/pages/contacto.html">Contacto</a>
                   </button>
                   </li>
                   
                   <li class="nav-item">
-                    <button type="button" class="btn btn-light colornavbar">
-                    <a class="nav-link" href="#"><img src="https://w7.pngwing.com/pngs/225/984/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping.png" width="40" alt=""></a>
+                    <button type="button" class="btn btn-nav colornavbar">
+                    <a class="nav-link" href="/pages/404.html" style="width: 50px;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
                     </button>
                   </li>
                   <li class="nav-item">
-                    <button type="button" class="btn btn-light colornavbar">
+                    <button type="button" class="btn btn-nav colornavbar">
                     <a class="nav-link"href="/pages/registrarse.html">Registrate</a>
                     </button>
                   </li>
@@ -89,7 +96,7 @@
         
         <main class="container-fluid">
             <div class="row mt-5">
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-5 ">
                 <h2>Carga de Productos</h2>
                     <form class=" mb-3 needs-validation row" id="FormProducts">
                         <div class=" col-12 col-md-6 mb-3">
@@ -104,7 +111,7 @@
                         </div>
                         <div class="col-12 mb-3">
                             <label for="description">Descripcion del producto</label>
-                            <textarea name="description" rows="4" class="form-control" id="description"></textarea>
+                            <textarea name="description" rows="4" class="form-control" id="description" style="resize: none; width: 400px;"></textarea>
                         </div>
                         <div class=" col-12 col-md-6 mb-3">
                             <label for="price" class="form-label">Precio</label>
@@ -132,10 +139,16 @@
                                 Favorito
                               </label>
                               </div>
+                              <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="descuento" name="descuento" checked>
+                                <label class="form-check-label" for="descuento">
+                                  Descuento
+                                </label>
+                              </div>
                         </div>
                         
                         
-                        <div class="col-12 mb-3">    
+                        <div class="col-12 mb-3" style="width: 400px;">    
                                 <select class="form-select" name="categoria" id="categoria" aria-label="Default select example">
                               <option selected>Selecciona una categoria</option>
                               <option value="Running">Running</option>
@@ -146,7 +159,7 @@
                             </select>
                         </div>
 
-                        <div class=" col-12  mb-3">
+                        <div class=" col-12  mb-3" style="width: 400px;">
                             <label for="image" class="form-label">Imagen</label>
                             <input name="image" type="url" class="form-control" id="image" value="" required minlength="5" maxlength="1000">
                             <div class="valid-feedback">
@@ -169,7 +182,7 @@
                     </form>
               </div>
     
-              <div class=" col-12 col-md-6 table-responsive-sm">
+              <div class=" col-12 col-md-7 table-responsive-sm">
                 <table class="table table-striped table-hover table-bordered" >
                     <thead>
                       <tr>
@@ -180,6 +193,7 @@
                         <th scope="col">Categoria</th>
                         <th scope="col">Destacado</th>
                         <th scope="col">Stock</th>
+                        <th scope="col">Descuento</th>
                         <th scope="col">Acciones</th>
                       </tr>
                     </thead>

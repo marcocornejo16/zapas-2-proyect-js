@@ -1,9 +1,11 @@
+
 const userOptionHTML = document.getElementById('user-options')
 
 function checkUserLogin() {
     const user = JSON.parse(localStorage.getItem('currentUser'));
     userOptionHTML.innerHTML = '';
     if(user) {
+      if(user.role === 'ADMIN_ROLE'){
         userOptionHTML.innerHTML = `
         <div class="nav-container">
         <li class='nav-link '>Bienvenido ${user.name}</li>
@@ -12,12 +14,12 @@ function checkUserLogin() {
         </li>
         </div>
       `
-      if(user.role === 'ADMIN_ROLE') {
+      }
         userOptionHTML.innerHTML += 
         `<li class="nav-item">
         <a class="nav-link btn-logout" href="#" onclick="logout()">Logout</a>
       </li>`
-      }
+      
     } else {
         userOptionHTML.innerHTML = `<li class="nav-item">
         <a class="nav-link active" aria-current="page" href="/pages/login.html">Login</a>

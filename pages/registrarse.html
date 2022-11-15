@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6806c90ed3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/IMAGES/logo-sneakers.webp">
 
 
     <title>SNEAKERS</title>
@@ -42,23 +43,30 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <button type="button" class="btn btn-light colornavbar">
-                                <a class="nav-link active" aria-current="page" href="/pages/about.html">Quienes Somos</a>
+                            <button type="button" class="btn btn-nav colornavbar">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                            </button>
+
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-nav colornavbar">
+                                <a class="nav-link active" aria-current="page" href="/pages/about.html">Quienes
+                                    Somos</a>
                             </button>
 
                         </li>
                         <li class="nav-item dropdown">
-                            <button type="button" class="btn btn-light colornavbar">
+                            <button type="button" class="btn btn-nav colornavbar">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Producto
                                 </a>
                                 <ul class="dropdown-menu colornavbar" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Runing</a></li>
-                                    <li><a class="dropdown-item" href="#">Botines</a></li>
-                                    <li><a class="dropdown-item" href="#">Basquet</a></li>
-                                    <li><a class="dropdown-item" href="#">Tennis</a></li>
-                                    <li><a class="dropdown-item" href="#">Bikers</a></li>
+                                    <li><a class="dropdown-item" href="/pages/404.html">Running</a></li>
+                                    <li><a class="dropdown-item" href="/pages/404.html">Botines</a></li>
+                                    <li><a class="dropdown-item" href="/pages/404.html">Basquet</a></li>
+                                    <li><a class="dropdown-item" href="/pages/404.html">Tennis</a></li>
+                                    <li><a class="dropdown-item" href="/pages/404.html">Bikers</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -66,22 +74,21 @@
                                 </ul>
                             </button>
                         </li>
-                            <li class="nav-item">
-                                <button type="button" class="btn btn-light colornavbar">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-nav colornavbar">
 
                                 <a class="nav-link" href="/pages/contacto.html">Contacto</a>
-                        </button>
+                            </button>
                         </li>
 
                         <li class="nav-item">
-                            <button type="button" class="btn btn-light colornavbar">
-                                <a class="nav-link" href="#"><img
-                                        src="https://w7.pngwing.com/pngs/225/984/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping.png"
-                                        width="40" alt=""></a>
+                            <button type="button" class="btn btn-nav colornavbar">
+                                <a class="nav-link" href="/pages/404.html" style="width: 50px;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
                             </button>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn btn-light colornavbar">
+                            <button type="button" class="btn btn-nav colornavbar">
                                 <a class="nav-link" href="/pages/registrarse.html">Registrate</a>
                             </button>
                         </li>
@@ -131,11 +138,11 @@
                             No es un apellido
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-6 mb-3">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input name="password" type="password" class="form-control" id="password"
-                            required minlength="5" maxlength="15">
+                        <input name="password" type="password" class="form-control" id="password" required minlength="5"
+                            maxlength="15">
                         <div class="valid-feedback">
                             Contraseña valida
                         </div>
@@ -171,8 +178,8 @@
                     </div>
                     <div class="col-lg-6 mb-3 form-responsive">
                         <label for="country" class="form-label">Pais</label>
-                        <select class="form-select is-invalid" id="country" name="country" aria-describedby="validationServer04Feedback"
-                            required>
+                        <select class="form-select is-invalid" id="country" name="country"
+                            aria-describedby="validationServer04Feedback" required>
                             <option selected disabled value="disabled selected">Seleccione un pais...</option>
                             <option>Argentina</option>
                             <option>Bolivia</option>
@@ -202,12 +209,12 @@
                             Seleccione un pais
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-md-6 text-center">
                     <button class="btn btn-register" type="submit">Enviar</button>
-                </div>    
-            </div>
+                </div>
+        </div>
         </form>
     </div>
     </div>
@@ -276,10 +283,11 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="/js/validacion-form.js"></script>
+    <script src="/js/auth-admin.js"></script>
     <script src="/js/auth.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-        <script>
+    <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
             'use strict'
