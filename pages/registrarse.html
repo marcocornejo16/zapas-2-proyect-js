@@ -103,17 +103,16 @@
             ###################################### -->
     </header>
 
-    <article>
-
-    </article>
     <div class="row espacio mt-3">
         <div class="col-sm-12 col-lg-6">
             <img src="https://thumbs.dreamstime.com/b/piernas-de-pares-deportistas-en-zapatillas-deporte-al-aire-libre-131390531.jpg"
                 class="img-fluid responsive" alt="">
+                
         </div>
         <div class="col-sm-12 col-lg-6">
             <h1 class="text-center">SE PARTE DEL MUNDO SNEAKERS</h1>
-            <form novalidate class="was-validated row mb-3 needs-validation" id="registroUsuario">
+            <form class=" row mb-3 needs-validation"  id="registroUsuario">
+
                 <div class="row mb-3 form-responsive">
                     <div class="col-lg-6 mb-3">
                         <label for="name" class="form-label">Nombre</label>
@@ -130,7 +129,7 @@
                     <div class="col-lg-6 mb-3">
                         <label for="lastName" class="form-label">Apellido</label>
                         <input name="lastName" type="text" pattern="[A-z A-z]{3,20}$" class="form-control" id="lastName"
-                            required required> <!-- minlength="3" maxlength="40" -->
+                            required required> 
                         <div class="valid-feedback">
                             Es un apellido
                         </div>
@@ -155,7 +154,7 @@
                         <label for="email" class="form-label">Email</label>
                         <input name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             class="form-control" id="email" required minlength="0" maxlength="50">
-                        <!--required required minlength="10" maxlength="50" -->
+                        
                         <div class="valid-feedback">
                             Es un e-mail
                         </div>
@@ -168,7 +167,6 @@
                         <label for="city" class="form-label">Ciudad</label>
                         <input name="city" type="text" pattern="[A-z A-z]{3,20}$" class="form-control" id="city"
                             required minlength="3" maxlength="15">
-                        <!--minlength="3" maxlength="15"-->
                         <div class="invalid-feedback">
                             Please provide a valid city.
                         </div>
@@ -178,10 +176,9 @@
                     </div>
                     <div class="col-lg-6 mb-3 form-responsive">
                         <label for="country" class="form-label">Pais</label>
-                        <select class="form-select is-invalid" id="country" name="country"
-                            aria-describedby="validationServer04Feedback" required>
-                            <option selected disabled value="disabled selected">Seleccione un pais...</option>
-                            <option>Argentina</option>
+                        <select class="form-select" id="country" name="country" aria-describedby="countryFeedback" required>
+                            <option selected disabled>Seleccione un pais...</option>
+                            <option >Argentina</option>
                             <option>Bolivia</option>
                             <option>Brasil</option>
                             <option>Chile</option>
@@ -202,12 +199,13 @@
                             <option>Uruguay</option>
                             <option>Venezuela</option>
                         </select>
-                        <div class="valid-feedback">
-                            Es un Pais
+                        <div id="country" class="valid-feedback">
+                            Pais seleccionado correctamente
                         </div>
-                        <div class="invalid-feedback">
-                            Seleccione un pais
+                        <div id="country" class="invalid-feedback">
+                            Seleccione un Pais
                         </div>
+                        
                     </div>
 
                 </div>
@@ -215,6 +213,7 @@
                     <button class="btn btn-register" type="submit">Enviar</button>
                 </div>
         </div>
+
         </form>
     </div>
     </div>
@@ -284,8 +283,9 @@
         crossorigin="anonymous"></script>
     <script src="/js/validacion-form.js"></script>
     <script src="/js/auth-admin.js"></script>
-    <script src="/js/auth.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields

@@ -15,8 +15,11 @@ padding: 0;}
 html{
     box-sizing:content-box;
     overflow-x: hidden;
-
 }
+
+
+
+
 @media screen and (max-width:991px) {
     .responsive {
         display: none;
@@ -177,7 +180,8 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow( 10px 10px 10px black);
+    filter: drop-shadow( 6px 3px 3px black);
+    
 
 }
 .btn-form-container button{
@@ -242,5 +246,5 @@ font-weight: bold;
     width: 70px;
     text-align: center;
     font-weight: bolder;
-
 }
+

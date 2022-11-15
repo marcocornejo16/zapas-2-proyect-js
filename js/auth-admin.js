@@ -16,7 +16,9 @@ function checkUserLogin() {
       `
       }
         userOptionHTML.innerHTML += 
-        `<li class="nav-item">
+        
+        `
+        <li class="nav-item">
         <a class="nav-link btn-logout" href="#" onclick="logout()">Logout</a>
       </li>`
       

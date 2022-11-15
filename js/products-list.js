@@ -13,10 +13,10 @@ function pintarTabla() {
     Products.forEach((elem, index) => {
         tableBodyHTML.innerHTML += `<tr>
         <td>
-            <img src="${elem.image}" alt="" class="table-img img-fluid responsive">
+            <img src="${elem.image}" alt="" class="table-img img-fluid">
         </td>
         <td>${elem.name}</td>
-        <td>${elem.description}</td>
+        <td class="text-description-table">${elem.description}</td>
         <td>${elem.price}</td>
         <td>${elem.categoria}</td>
         <td>  
@@ -51,6 +51,7 @@ AddProductForm.addEventListener('submit', (event) => {
 
 
     event.preventDefault();
+
     console.dir(event.target.elements);
 
     const forElements = event.target.elements;
@@ -65,7 +66,7 @@ AddProductForm.addEventListener('submit', (event) => {
         categoria: forElements.categoria.value,
         descuento: forElements.descuento.checked,
     }
-
+    
 
     console.log('Nuevo producto cargado')
     pintarTabla();
@@ -78,22 +79,21 @@ AddProductForm.addEventListener('submit', (event) => {
 
     console.log(newProduct)
 
-    // newProduct.favorito = !!otroProduct.favorito;
-    // newProduct.stock = !!otroProduct.stock;
+
 
     if (editable >= 0) {
         Products[editable] = newProduct;
     } else {
         Products.push(newProduct)
+        swal('Se ha cargado un producto','', 'success');
     }
 
     AddProductForm.reset()
-
+    AddProductForm.focus()
 
     console.log(Products)
     localStorage.setItem('products', JSON.stringify(Products))
     pintarTabla();
-    AddProductForm.reset()
 
 })
 
@@ -130,16 +130,16 @@ function editProduct(idx) {
         if ('checked' in AddProductForm.elements[key]) {
             console.log(key, !!prod[key])
             AddProductForm.elements[key].checked = prod[key]
-
+            // swal('Se editara un producto','', 'warning');
         }
         AddProductForm.elements[key].value = Products[idx][key]
-
+        
     })
     AddProductForm.setAttribute('data-edit', idx);
     editable = idx;
-    // deleteProduct(idx)
-    // localStorage.setItem('products', JSON.stringify(Products));
-
+    
+    
+    
 }
 
 function setFavorite(idx) {

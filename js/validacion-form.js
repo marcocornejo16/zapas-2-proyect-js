@@ -5,10 +5,10 @@ const users = JSON.parse(localStorage.getItem('users')) || [];
 
 registroUsuario.addEventListener("submit", function(evt) {
 
+
     if(!registroUsuario) {
         return;
     }
-
     evt.preventDefault();
 
         const usersElements = evt.target.elements
@@ -24,11 +24,14 @@ registroUsuario.addEventListener("submit", function(evt) {
     }
     console.log('Se ha cargado un nuevo usuario')
     console.dir(newUser)
+    console.log(users)
 
     const emailExist = checkIfUserExist(newUser.email)
+    
     if(emailExist) {
         // swal con mensaje de alerta
         swal('Error al registrarse', 'El email ingresado ya existe', 'error');
+        registroUsuario.reset()
         
     } else {
         swal('¡Bienvenido!', 'Usted se ha registrado con exito', 'success');
@@ -50,7 +53,5 @@ registroUsuario.addEventListener("submit", function(evt) {
 function checkIfUserExist(email) {
     return users.some(usr => usr.email === email);
 }
-
-
 
 
