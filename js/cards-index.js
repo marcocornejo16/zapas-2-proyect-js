@@ -32,7 +32,7 @@ function renderProduct(prod, idx, cardContainer) {
         <div class="d-flex">
 
         <div class="stock-cards m-1" style="height: 25px;">
-        ${prod.stock ? `<p>En stock</p>` : '<div class="bg-white" style="height: 25px;"></div>' }
+        ${prod.stock ? `<p>En stock</p>` : '<div class="bg-danger" style="height: 25px;"> <p>Sin stock</p></div>' }
         </div>
         <div class="desc-cards bg-warning m-1" style="height: 25px; ">
         ${prod.descuento ? `<p>15% OFF</p>` : '<div class="bg-white" style="height: 25px;"></div>' }

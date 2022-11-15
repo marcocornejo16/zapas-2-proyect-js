@@ -22,7 +22,7 @@ function checkUserLogin() {
       
     } else {
         userOptionHTML.innerHTML = `<li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/pages/login.html">Login</a>
+        <a class="nav-link active btn-logout" aria-current="page" href="/pages/login.html">Login</a>
       </li>`
 
       
