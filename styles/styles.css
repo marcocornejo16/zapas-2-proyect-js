@@ -223,6 +223,11 @@ font-weight: bold;
         color: #000;
 
     }
-    .none p{
-        background-color: white;
-    }
+
+.stock-cards-pags{
+    background-color: rgb(0, 206, 0);
+    width: 70px;
+    text-align: center;
+    font-weight: bolder;
+
+}

@@ -34,8 +34,8 @@ function renderProduct(prod, idx, cardContainer) {
         <div class="stock-cards m-1" style="height: 25px;">
         ${prod.stock ? `<p>En stock</p>` : '<div class="bg-white" style="height: 25px;"></div>' }
         </div>
-        <div class="desc-cards m-1" style="height: 25px; ">
-        ${prod.descuento ? `<p>Descuento</p>` : '<div class="bg-white" style="height: 25px;"></div>' }
+        <div class="desc-cards bg-warning m-1" style="height: 25px; ">
+        ${prod.descuento ? `<p>15% OFF</p>` : '<div class="bg-white" style="height: 25px;"></div>' }
         </div>   
             
         </div>
@@ -44,8 +44,13 @@ function renderProduct(prod, idx, cardContainer) {
                 <div class="card-body bg-cards">
                 <h5 class="card-title border-bottom">${prod.name}</h5>
                 <p class="card-text text-cards"> ${prod.description}</p>
+
+                <div class="text-end">
+                ${prod.descuento ? `<small> <del>$${prod.price}</del></small> <h5>$${Math.round(prod.price / 1.15)}</h5>` : `<div><h5>$${prod.price}</h5></div>` }
+            </div>   
+                
                 </div>
-            <button class="btn-cards m-0"><a href="/pages/paginaCard.html?id=${idx}" class="text-dec-none">Ver mas</a></button>
+            <button class="btn-cards"><a href="/pages/paginaCard.html?id=${idx}" class="text-dec-none">Ver mas</a></button>
     </div>`
     if(prod.favorito == true){
         cardFavorite.innerHTML = `

@@ -99,3 +99,26 @@ html{
 .img-cover{
     object-fit: contain;
 }
+
+@media screen and (max-width:700px) {
+    #cardPag{
+        margin: auto;
+    }
+    .img-pag{
+        width:400px;
+    }
+    .description-pag{
+        width: 300px;
+        margin: auto !important;
+        
+    }
+    .info-pag{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 400px;
+    }
+    .text-pag{
+        text-align: center;
+    }
+}
