@@ -33,6 +33,10 @@ console.log(Products)
                         <a href="/pages/404.html" class="btn btn-primary page-card btn">38</a>
                         <a href="/pages/404.html" class="btn btn-primary page-card btn">39</a>
                         <a href="/pages/404.html" class="btn btn-primary page-card btn">40</a>
+                        <a href="/pages/404.html" class="btn btn-primary page-card btn">40.5</a>
+                        <a href="/pages/404.html" class="btn btn-primary page-card btn">41</a>
+                        <a href="/pages/404.html" class="btn btn-primary page-card btn">41.5</a>
+                        <a href="/pages/404.html" class="btn btn-primary page-card btn">42</a>
                     </div>
                     <div class="btn-outline text-pag">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check btn-icon" viewBox="0 0 16 16">

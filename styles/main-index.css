@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&family=Shalimar&display=swap');
+
+
 html{
     box-sizing:content-box;
     overflow-x: hidden;
 }
 *{
     font-family: 'Nunito Sans', sans-serif;
+
 }
 
 .cards-w{
@@ -99,12 +102,7 @@ html{
     .responsive-img img{
         display: none;
     }
-    .responsive-destacada{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: block;
-    }
+
     .cards-responsive{
         width: 300px;
         height: auto;
@@ -131,7 +129,14 @@ html{
     .responsive-submenu a{
         display: none;
     }
+    .responsive-destacada{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
 }
+
 .text-cards{
     white-space: nowrap;
     overflow: hidden;
@@ -249,4 +254,23 @@ html{
 
 .bg-bisque{
     background-color: bisque;
+}
+
+.count-down{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title-count{
+
+    background-image: url(/IMAGES/img-count.jpg);
+    height: 100px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+
 }

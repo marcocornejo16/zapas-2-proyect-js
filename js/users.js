@@ -32,18 +32,18 @@ const user = usersOriginal.find((usr) => {
         return true
     }
     else{
-        swal('Error en el login', 'los datos ingresados no sson correctos', 'error');
+        swal('Error en el login', 'Los datos ingresados no son correctos', 'error');
     return
     }
 });
 
 if(user.active === false) {
-
+return
 }
 
 if(user === undefined) {
     // A- Que no encuentre el correo
-    swal('Error en el login', 'los datos ingresados no son correctos', 'error');
+    swal('Error en el login', 'Los datos ingresados no son correctos', 'error');
     return
 }
 
@@ -63,7 +63,7 @@ if(user.password === passwordInput) {
     }, 2000)
 } else {
 
-    swal('Error en el login', 'los datos ingresados no sson correctos', 'error');
+    swal(`Lo sentimos ${user.name}`, ' La contraseña que has introducido es incorrecta', 'error');
     return
 }
 

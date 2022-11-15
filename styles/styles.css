@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&family=Shalimar&display=swap');
+
+
+
 *{
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -12,6 +15,15 @@ padding: 0;}
 padding: 0;}
 
 
+
+body{display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+}
+
+
+
 html{
     box-sizing:content-box;
     overflow-x: hidden;
@@ -19,7 +31,56 @@ html{
 
 
 
+.about-info{
+    border: 1px solid #000;
+    margin: 25px;
 
+}
+
+
+.text-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.text-about p{
+    font-size: .5rem;
+
+}
+.title-img h1{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.title-marcas-about{
+margin: 15px;
+display: flex;
+flex-direction: column;
+align-items: center; justify-content: center;
+}
+
+.marcas-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.marcas-container img{
+    margin: 10px;
+}
+.img-about-container{
+    position: relative;
+}
+.img-about{
+    height: 150px;
+    filter: sepia(.5) opacity(.8) brightness(.5);
+    
+}
+.title-img{
+    position: absolute;
+    top: 32%;
+    left: 30%;
+}
 @media screen and (max-width:991px) {
     .responsive {
         display: none;
@@ -31,7 +92,68 @@ html{
     .responsive-img img{
         display: none;
     }
+    .img-about-container{
+        height: 150px;
+    }
+    .title-img{
+        position: absolute;
+        top: 32%;
+        left: 20%;
+        margin:auto
+    }
 
+    .marcas-container img {
+        margin-left: 20px;
+
+    }
+    .logo-banner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    }
+    .about-info{
+        width: 100%;
+        border: none;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+
+    .title-marcas-about{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-marcas-about h2{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .title-count{
+        font-size: .5rem;
+        height: 150px !important;
+        
+    }
+    .count-down{
+        font-size: .5rem;
+
+    }
+    .title-img h1{
+        font-size: 2rem;
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width: 300px;
+        
+    }
+    .text-about{
+        margin: 15px;
+        margin-top: 20px;
+    }
 }
 
 .logo-footer{
@@ -93,11 +215,6 @@ html{
     background-color: yellow;
 }
 
-.marcas-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .card-about img {
     width: 200px;
@@ -105,24 +222,9 @@ html{
     margin-top: 10px;
     border-radius: 50%;
 }
-.img-about-container{
-    position: relative;
-}
-.img-about{
-    height: 150px;
-    filter: sepia(.5) opacity(.8) brightness(.5);
-    
-}
-.title-img{
-    position: absolute;
-    top: 32%;
-    left: 30%;
-}
-.title-img h1{
-    color: #fff;
-    font-weight: bolder;
-    font-size: 3rem;
-}
+
+
+
 .text-about p{
     font-size: 1.5rem;
 
@@ -248,3 +350,13 @@ font-weight: bold;
     font-weight: bolder;
 }
 
+
+.forgot-password{
+    text-decoration: none;
+    color: #fff;
+    background: #999;
+    padding: 1px;
+}
+.forgot-password:hover{ 
+    color: #000;
+}
