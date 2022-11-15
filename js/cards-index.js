@@ -36,7 +36,25 @@ function renderProduct(prod, idx, cardContainer) {
                 </div>
             <button class="btn-cards m-0"><a href="/pages/paginaCard.html?id=${idx}" class="text-dec-none">Ver mas</a></button>
     </div>`
-}
+    if(prod.favorito == true){
+        cardFavorite.innerHTML = `
+                    <div class=" row m-5">
+                    <h4 class="border-bottom p-2" >Mira el favorito de la semana</h4>
+                        <div class="col-md-6">
+                            <img src=${prod.image} class="img-fluid img-card-destacada">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                            <div class="card-body">
+                            <h5 class="card-title ">${prod.name}</h5>
+                            <p class="card-text w-100 responsive-destacada">${prod.description}</p>
+                            </div>
+                            <button class="btn-cards d-flex"><a href="/pages/paginaCard.html?id=${idx}" class="text-dec-none">Ver mas</a></button>
+                    </div>
+                    </div>`
+    }
+    };
+    
+
 
 
 
@@ -75,23 +93,6 @@ function renderProduct(prod, idx, cardContainer) {
 //                 </div>
 //             <button class="btn-cards m-0"><a href="/pages/paginaCard.html" class="text-dec-none">Ver mas</a></button>
 // </div>  `
-// if(prod.favorito == true){
-//     cardFavorite.innerHTML = `
-//                 <div class=" row m-5">
-//                 <h4 class="border-bottom p-2" >Mira el favorito de la semana</h4>
-//                     <div class="col-md-6">
-//                         <img src=${prod.image} class="img-fluid img-card-destacada">
-//                         </div>
-//                         <div class="col-md-6 col-sm-12">
-//                         <div class="card-body">
-//                         <h5 class="card-title ">${prod.name}</h5>
-//                         <p class="card-text w-100 responsive-destacada">${prod.description}</p>
-//                         </div>
-//                         <button class="btn-cards d-flex"><a href="/pages/cards.html" class="text-dec-none">Ver mas</a></button>
-//                 </div>
-//                 </div>`
-// }
-// };
 
 
 

@@ -1,7 +1,7 @@
 const adminUser = {
-    name: `John Doe`,
-    email: `johndoe@gmail.com`,
-    password: `alfabeta`,
+    name: `Marco`,
+    email: `marco@scrum.com`,
+    password: `marco`,
     active: true,
     role: `ADMIN_ROLE`
 }
@@ -43,7 +43,7 @@ if(user.active === false) {
 
 if(user === undefined) {
     // A- Que no encuentre el correo
-    swal('Error en el login', 'los datos ingresados no sson correctos', 'error');
+    swal('Error en el login', 'los datos ingresados no son correctos', 'error');
     return
 }
 

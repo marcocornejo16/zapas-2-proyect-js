@@ -174,3 +174,23 @@ html{
     display: flex;
     justify-content: center;
 }
+.nav-container{
+    display: flex;
+}
+
+.btn-admin{
+background-color: bisque;
+color: #000;
+font-weight: bold;
+
+}
+
+.btn-admin:hover{
+    background-color: rgb(255, 211, 157);
+    color: black;
+}
+
+.btn-logout{
+    font-weight: bolder;
+    color: black;
+}

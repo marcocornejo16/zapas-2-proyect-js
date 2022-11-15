@@ -5,19 +5,25 @@ function checkUserLogin() {
     userOptionHTML.innerHTML = '';
     if(user) {
         userOptionHTML.innerHTML = `
-        <li class='text-dark'>Bienvenido ${user.name}</li>
+        <div class="nav-container">
+        <li class='nav-link '>Bienvenido ${user.name}</li>
         <li class="nav-item">
-        <a class="nav-link" href="#" onclick="logout()">Logout</a>
-      </li>`
+        <a class="nav-link btn-admin" href="/pages/table-products.html">Admin Products</a>
+        </li>
+        </div>
+      `
       if(user.role === 'ADMIN_ROLE') {
-        userOptionHTML.innerHTML += `<li class="nav-item">
-        <a class="nav-link" href="/pages/table-products.html">Admin Products</a>
+        userOptionHTML.innerHTML += 
+        `<li class="nav-item">
+        <a class="nav-link btn-logout" href="#" onclick="logout()">Logout</a>
       </li>`
       }
     } else {
         userOptionHTML.innerHTML = `<li class="nav-item">
         <a class="nav-link active" aria-current="page" href="/pages/login.html">Login</a>
       </li>`
+
+      
     }
 }
 checkUserLogin();
