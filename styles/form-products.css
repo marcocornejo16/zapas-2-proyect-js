@@ -1,0 +1,17 @@
+.form-container form {
+    width: 500px;
+}
+
+@media screen and (max-width:750px) {
+    .form-container form{
+        width: 350px;
+    }
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&family=Shalimar&display=swap');
+
+
+html{
+    box-sizing:content-box;
+    overflow-x: hidden;
+}
+*{
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.cards-w{
+    width: 50rem;
+    height: 15rem;
+}
+.cards-shadow{
+    border-radius: 0px;
+    filter:drop-shadow(5px 3px 5px black)
+}
+.cards-img{
+    height: 10rem;
+    object-fit: contain;
+}
+
+.d-flex{
+    justify-content:space-evenly;
+}
+
+.btn-sections{
+    text-decoration: none;
+    color: #000;
+    border-radius: 0px ;
+    transition: all .5s;
+    background-color: #eee;
+}
+.btn-sections:hover{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-cards {
+    border-radius: 0px;
+    transition: all .5s;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+.text-dec-none{
+    text-decoration: none;
+}
+
+.btn-cards:hover{
+    background:#000 ;
+    color: #fff;
+    text-decoration: none;
+}
+
+.carousel-item{
+    height: 450px;
+}
+.carousel-contain{
+    object-fit: cover;
+    top: 50%;
+}
+
+.titles-cards {
+    color: black;
+    background-color: #fff;
+    transition: all .5s;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.titles-cards:hover{
+    background-color: black;
+    color: #fff;
+    width: 150px;
+    cursor: pointer;
+}
+.d-flex-cards{
+    display: flex;
+    justify-content:space-between;     
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.m-1{
+    margin: 5px;
+}
+.m-0{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width:991px) {
+    .responsive {
+        display: none;
+    }
+    .responsive-img img{
+        display: none;
+    }
+
+    .cards-responsive{
+        width: 300px;
+        height: auto;
+        margin: auto;
+    }
+
+}
+.bg-black{
+    background:linear-gradient(10deg,#000,#000,#111,#eee);
+}
+
+.img-card-destacada{
+    height: 300px;
+    width: max-content;
+}
+@media screen and (max-width:757px){
+    .img-card-destacada{
+        width: 300px;
+        height: 150px;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .responsive-submenu a{
+        display: none;
+    }
+    .responsive-destacada{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+}
+
+.text-cards{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.h-35{
+    height: 5px;
+    background: #000;
+    display: flex;
+    transition: all .5s;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-card-contain-futbol{
+    background:linear-gradient(0deg,#000,#000,#000,#000,#000,#000,#fff,#000,#000,#000,#000,#000,#000)
+
+}
+.img-card-contain-tenis{
+    background:linear-gradient(0deg, rgb(89, 202, 240),#fff,rgb(89, 202, 240))
+}
+
+
+.h-cards-section{
+    height: 400px;
+    object-fit:cover;
+    width: 300px;
+    
+}
+.h-img-section{
+    height: 505px;
+    
+}
+.color-w{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.h-35:hover{
+    height: 100px;
+    padding: 10px;
+    cursor:none;
+}
+.flex-cards{
+    margin: 2px;
+}
+
+.titles-products {
+    color: black;
+    transition: all .5s;
+}
+.titles-products a{
+    text-decoration: none;
+    color: #000;
+}
+.titles-products:hover a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.titles-products:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.borders-radius-none{
+    border-radius: 0px;
+}
+.logo-banner img{
+    width: 80px;
+    justify-content: center;
+    margin-top:30px;
+
+}
+
+.logo-footer{
+    width: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+
+.bg-bisque{
+    background-color: bisque;
+}
+
+.count-down{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title-count{
+
+    background-image: url(/IMAGES/img-count.jpg);
+    height: 100px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+
+}

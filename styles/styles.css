@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@100&family=Shalimar&display=swap');
+
+
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+#colornav {background-color: rgb(255, 238, 208);
+    padding: 0;;
+}
+.nombrefantasia{font-family: 'Anton', sans-serif;}
+#colordrop {background-color: rgb(245, 238, 225);
+padding: 0;}
+.colornavbar{background-color:rgb(255, 238, 208);
+padding: 0;}
+
+
+
+body{display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+}
+
+
+
+html{
+    box-sizing:content-box;
+    overflow-x: hidden;
+}
+
+
+
+.about-info{
+    border: 1px solid #000;
+    margin: 25px;
+
+}
+
+
+.text-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.text-about p{
+    font-size: .5rem;
+
+}
+.title-img h1{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.title-marcas-about{
+margin: 15px;
+display: flex;
+flex-direction: column;
+align-items: center; justify-content: center;
+}
+
+.marcas-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.marcas-container img{
+    margin: 10px;
+}
+.img-about-container{
+    position: relative;
+}
+.img-about{
+    height: 150px;
+    filter: sepia(.5) opacity(.8) brightness(.5);
+    
+}
+.title-img{
+    position: absolute;
+    top: 32%;
+    left: 30%;
+}
+@media screen and (max-width:991px) {
+    .responsive {
+        display: none;
+    }
+    .form-responsive{
+        width: 400px;
+        margin: auto;
+    }
+    .responsive-img img{
+        display: none;
+    }
+    .img-about-container{
+        height: 150px;
+    }
+    .title-img{
+        position: absolute;
+        top: 32%;
+        left: 20%;
+        margin:auto
+    }
+
+    .marcas-container img {
+        margin-left: 20px;
+    }
+    .logo-banner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    }
+    .about-info{
+        width: 100%;
+        border: none;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+
+
+    .title-count{
+        font-size: .5rem;
+        height: 150px !important;
+        
+    }
+    .count-down{
+        font-size: .5rem;
+
+    }
+
+    .title-img h1{
+        font-size: 2rem;
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width: 300px;
+        
+    }
+    .text-about{
+        margin: 15px;
+        margin-top: 20px;
+    }
+}
+@media  screen and (max-width:900px) {
+    .title-marcas-about{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .title-marcas-about h2{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+}
+@media  screen and (max-width:400px){
+    .title-marcas-about{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.logo-footer{
+    width: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+.redes-footer{
+    display: flex;
+    justify-content: center;
+}
+.flex-footer {
+    background-color: #111;
+    font-family: ¨Nunito sans¨ sans-serif;
+    display: flex;
+    flex: 1;    
+    text-align: center;
+}
+.flex-img a img {
+    width: 250px;
+}
+.icons-footer {
+    color: white;
+    padding: 1rem;
+    font-family: "Nunito sans" sans-serif;
+}
+
+.icons-footer a {
+    font-size: 12px;
+    color: black;
+    margin: 3px;
+}
+.icons-footer h3{
+    color: #000;
+}
+
+.bg-bisque{
+    background-color: bisque;
+}
+
+.footer-list {
+    list-style:none;
+    padding: 0 !important;
+}
+.footer-list a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-list a:hover{
+    color: #555 ;
+}
+                
+.flex-footer {
+
+    background-color:bisque;
+    font-family: ¨Nunito sans¨ sans-serif;
+    display: flex;
+    flex: 1;    
+}
+.bg-yellow{
+    background-color: yellow;
+}
+
+
+.card-about img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+
+
+.text-about p{
+    font-size: 1.5rem;
+
+}
+.logo-banner img{
+    width: 80px;
+    margin-top :30px;
+    display: flex;
+}
+
+
+.btn-form{
+    background-color: black;
+    color: bisque;
+    border: black;
+    padding: .5rem;
+    margin: 1.5rem;
+}
+.btn-form:hover{
+    background-color: bisque;
+    color: #000;
+}
+
+.btn-404 a{
+    color: white;
+    text-decoration: none;
+    background-color: #000;
+    padding: .5rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+.btn-404:hover a{
+    background-color: bisque;
+    color: #000;
+}
+
+.btn-register{
+    background-color: black;
+    color: bisque;
+    border: black;
+    padding: .5rem;
+    margin: 1.5rem;
+    width: 200px;
+}
+.btn-register:hover{
+    background-color: bisque;
+    color: #000;
+}
+
+.form-login{
+    background:url(/IMAGES/bg-login.jpg);
+    width: 700px;
+    height: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow( 6px 3px 3px black);
+    
+
+}
+.btn-form-container button{
+    width: 200px;
+}
+.pag-login{
+    display: flex;
+    justify-content: center;
+}
+.nav-container{
+    display: flex;
+}
+
+.btn-admin{
+background-color: bisque;
+color: #000;
+font-weight: bold;
+
+}
+
+.btn-admin:hover{
+    background-color: rgb(255, 211, 157);
+    color: black;
+}
+
+.btn-logout{
+    font-weight: bolder;
+    color: black;
+}
+
+.btn-nav{
+    transition: .3s;
+}
+.btn-nav:hover{
+    background-color: bisque;
+    font-size: 18px;
+}
+
+.stock-cards{
+    background-color: rgb(0, 206, 0);
+    width: 70px;
+    text-align: center;
+}
+.stock-cards p{
+    font-weight: bolder;
+    color: #fff;
+}
+
+.desc-cards{
+    background-color: yellow;
+    width: 80px;
+    text-align: center;
+    }
+    .desc-cards p{
+        font-weight: bolder;
+        color: #000;
+
+    }
+
+.stock-cards-pags{
+    background-color: rgb(0, 206, 0);
+    width: 70px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.forgot-password{
+    text-decoration: none;
+    color: #fff;
+    background: #999;
+    padding: 1px;
+}
+.forgot-password:hover{ 
+    color: #000;
+}
+
+.cybermonday{
+    background: linear-gradient(90deg, rgba(180,58,163,1) 0%, rgba(213,29,253,1) 25%, rgba(69,242,252,1));
+    color: #fff;
+
+}
+.cybermonday h1{
+    font-weight:bolder;
+}
